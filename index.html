@@ -1,22 +1,203 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <h1>Tabulous</h1>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tabulous</title>
+  <meta name="description" content="Tabulous helps you organize browser windows into named, color-coded workspaces." />
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#0f1630;
+      --text:#e9ecff;
+      --muted:#b7bde6;
+      --line:rgba(255,255,255,.10);
+      --accent:#7c5cff;
+      --accent2:#2dd4ff;
+      --btn:#141d3e;
+      --shadow: 0 14px 40px rgba(0,0,0,.35);
+      --radius:16px;
+      --max:980px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(124,92,255,.35), transparent 60%),
+        radial-gradient(900px 500px at 80% 0%, rgba(45,212,255,.20), transparent 55%),
+        linear-gradient(180deg, var(--bg), #070a14 75%);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 56px;}
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px; padding:14px 16px;
+      background:rgba(255,255,255,.04);
+      border:1px solid var(--line);
+      border-radius:999px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px; min-width:0;
+      font-weight:800; letter-spacing:.2px;
+    }
+    .brand small{display:block; font-weight:600; color:var(--muted); margin-top:2px}
+    .nav{
+      display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:flex-end;
+    }
+    .pill{
+      text-decoration:none;
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      color:var(--text);
+      font-weight:650;
+      font-size:14px;
+      transition: transform .08s ease, background .2s ease, border-color .2s ease;
+      white-space:nowrap;
+    }
+    .pill:hover{transform: translateY(-1px); background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.18)}
+    .hero{
+      margin-top:18px;
+      padding:34px 22px;
+      border-radius: var(--radius);
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      box-shadow: var(--shadow);
+    }
+    .logo{
+      display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+      margin-bottom:18px;
+    }
+    .wordmark{
+      height:44px;
+      max-width: 100%;
+      object-fit: contain;
+      display:block;
+      filter: drop-shadow(0 10px 22px rgba(0,0,0,.35));
+    }
+    h1{
+      margin:0 0 10px;
+      font-size:40px;
+      line-height:1.1;
+      letter-spacing:-.6px;
+    }
+    p{margin:10px 0; color:var(--muted); font-size:16px; line-height:1.65;}
+    .grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:16px;
+      margin-top:18px;
+    }
+    .card{
+      padding:18px 18px;
+      border-radius: var(--radius);
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+    .card h2{margin:0 0 10px; font-size:18px}
+    ul{margin:0; padding-left:18px; color:var(--muted); line-height:1.65}
+    .ctaRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
+    .btn{
+      text-decoration:none;
+      padding:12px 14px;
+      border-radius:12px;
+      background: var(--btn);
+      border:1px solid rgba(255,255,255,.14);
+      font-weight:750;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(124,92,255,.95), rgba(45,212,255,.85));
+      border:0;
+      color:#071023;
+    }
+    .footer{
+      margin-top:18px;
+      color:rgba(255,255,255,.55);
+      font-size:13px;
+      text-align:center;
+    }
+    code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+    @media (max-width: 860px){
+      .grid{grid-template-columns:1fr}
+      h1{font-size:34px}
+      .wordmark{height:40px}
+      .nav{justify-content:flex-start}
+      .topbar{border-radius:18px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="brand" aria-label="Tabulous">
+        <div>
+          <strong>Tabulous</strong>
+          <small>Workspaces for your browser</small>
+        </div>
+      </div>
 
-<p>
-Tabulous is a Chrome extension that helps you organize browser windows
-into clear, named workspaces — so you can focus without tab overload.
-</p>
+      <nav class="nav" aria-label="Site navigation">
+        <a class="pill" href="./index.html">Home</a>
+        <a class="pill" href="./support.html">Support</a>
+        <a class="pill" href="./privacy.html">Privacy</a>
+      </nav>
+    </header>
 
-<p>
-Create color-coded workspaces, move tabs between them instantly,
-and restore your working context at any time.
-</p>
+    <main class="hero">
+      <div class="logo">
+        <!-- Put your wordmark file in the repo as: tabulous-wordmark.png -->
+        <img class="wordmark" src="tabulous-wordmark.png" alt="Tabulous wordmark logo" />
+      </div>
 
-<p>
-Support: <a href="support.html">Contact support</a>
-</p>
+      <h1>Stay organized without tab overload.</h1>
+      <p>
+        Tabulous helps you treat browser windows as named, color-coded workspaces — so you can focus on what matters
+        and keep your browser tidy even when juggling multiple projects.
+      </p>
 
+      <div class="ctaRow">
+        <a class="btn primary" href="./support.html">Get support</a>
+        <a class="btn" href="./privacy.html">Read privacy policy</a>
+      </div>
+
+      <section class="grid" aria-label="Key information">
+        <div class="card">
+          <h2>Key features</h2>
+          <ul>
+            <li>Group windows into named workspaces</li>
+            <li>Color-code workspaces for instant visual recognition</li>
+            <li>Open/close/restore workspace windows without losing your place</li>
+            <li>Send tabs between workspaces quickly</li>
+            <li>Optional auto-sleep for inactive tabs to save memory</li>
+            <li>YouTube workspaces can be handled as a neat list instead of opening everything at once</li>
+            <li>All data stored locally — nothing is sent externally</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Contact</h2>
+          <p>If you need help, email:</p>
+          <p><strong><a href="mailto:support@tabulous.tools">support@tabulous.tools</a></strong></p>
+          <p style="margin-top:12px">Tip: include your Chrome version and a brief description of the issue.</p>
+        </div>
+      </section>
+
+      <div class="footer">
+        © <span id="y"></span> Tabulous • Built for Chrome • <code>All data stored locally</code>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
