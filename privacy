@@ -1,1 +1,81 @@
+<h1>Privacy Policy</h1>
+
+<p>
+Tabulous is designed with privacy as a core principle.
+We do not collect, transmit, store, or sell any personal data.
+</p>
+
+<h2>Data Collection</h2>
+
+<p>
+Tabulous does not collect any personal information, browsing history,
+or identifiable user data.
+</p>
+
+<p>
+All workspace data (such as workspace names, colors, and tab URLs)
+is stored locally on your device using Chrome’s built-in storage APIs.
+This data never leaves your browser.
+</p>
+
+<h2>Data Usage</h2>
+
+<p>
+The data stored by Tabulous is used solely to provide its core functionality,
+including organizing workspaces, restoring windows, and recovering sessions
+after unexpected browser shutdowns.
+</p>
+
+<p>
+Tabulous does not analyze, share, or transmit this data in any way.
+</p>
+
+<h2>Permissions</h2>
+
+<p>
+Tabulous requires certain Chrome permissions to function correctly:
+</p>
+
+<ul>
+  <li>
+    <strong>Tabs and Windows</strong> – to organize, move, and restore browser tabs and windows.
+  </li>
+  <li>
+    <strong>Storage</strong> – to save workspace information locally on your device.
+  </li>
+  <li>
+    <strong>Alarms</strong> – to periodically save recovery snapshots so your workspaces
+    can be restored in the event of a browser crash or unexpected shutdown.
+  </li>
+</ul>
+
+<p>
+These permissions are used only for core functionality and never for tracking,
+analytics, or advertising.
+</p>
+
+<h2>Third Parties</h2>
+
+<p>
+Tabulous does not use third-party analytics, tracking services,
+advertising networks, or external APIs.
+</p>
+
+<h2>Data Retention</h2>
+
+<p>
+All data remains on your local device and can be removed at any time
+by uninstalling the extension.
+</p>
+
+<h2>Contact</h2>
+
+<p>
+If you have any questions about this privacy policy,
+you can contact us at:
+</p>
+
+<p>
+<a href="mailto:support@tabulous.tools">support@tabulous.tools</a>
+</p>
 
