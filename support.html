@@ -5,43 +5,168 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tabulous Support</title>
   <style>
-    :root{--bg:#0b1020;--text:#e9ecff;--muted:#b7bde6;--line:rgba(255,255,255,.10);--shadow:0 14px 40px rgba(0,0,0,.35);--radius:16px;--max:980px}
+    :root{
+      --bg1:#111a3d;
+      --bg2:#2d1b69;
+      --bg3:#3b247d;
+      --text:#f4f6ff;
+      --muted:#d6dcff;
+      --line:rgba(255,255,255,.18);
+      --shadow:0 16px 40px rgba(0,0,0,.28);
+      --radius:18px;
+      --max:980px;
+      --nav-text:#1f2442;
+      --nav-pill-bg:#ffffff;
+      --nav-pill-border:rgba(20,24,45,.12);
+    }
+
     *{box-sizing:border-box}
-    body{margin:0;font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;background:linear-gradient(180deg,var(--bg),#070a14 75%);color:var(--text)}
-    a{color:inherit}
+    body{
+      margin:0;
+      font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(125,162,255,.22), transparent 30%),
+        radial-gradient(circle at top right, rgba(159,124,255,.18), transparent 28%),
+        linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 55%, var(--bg3) 100%);
+      min-height:100vh;
+    }
+
+    a{color:inherit;text-decoration:none}
     .wrap{max-width:var(--max);margin:0 auto;padding:28px 18px 56px}
-    .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 16px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:999px;box-shadow:var(--shadow)}
-    .nav{display:flex;gap:10px;flex-wrap:wrap}
-    .pill{text-decoration:none;padding:10px 12px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.03);font-weight:650;font-size:14px;white-space:nowrap}
-    .card{margin-top:18px;padding:26px 22px;border-radius:var(--radius);border:1px solid var(--line);background:rgba(255,255,255,.03);box-shadow:var(--shadow)}
-    h1{margin:0 0 12px;font-size:34px;letter-spacing:-.4px}
-    p{margin:10px 0;color:var(--muted);line-height:1.65}
-    ul{margin:10px 0 0;padding-left:18px;color:var(--muted);line-height:1.65}
-    .email{display:inline-block;margin-top:8px;font-weight:800}
+
+    .topbar-wrap{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    .brand-pill{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:14px 18px;
+      border-radius:999px;
+      background:#ffffff;
+      border:1px solid rgba(20,24,45,.08);
+      box-shadow:var(--shadow);
+    }
+
+    .brand-pill img{
+      height:52px;
+      width:auto;
+      display:block;
+    }
+
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      padding:14px 16px;
+      background:rgba(255,255,255,.10);
+      border:1px solid var(--line);
+      border-radius:999px;
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(10px);
+      flex:1 1 520px;
+    }
+
+    .nav{display:flex;gap:10px;flex-wrap:wrap;width:100%;justify-content:flex-end}
+
+    .pill{
+      padding:10px 16px;
+      border-radius:999px;
+      border:1px solid var(--nav-pill-border);
+      background:var(--nav-pill-bg);
+      color:var(--nav-text);
+      font-weight:800;
+      font-size:14px;
+      white-space:nowrap;
+      box-shadow:0 4px 12px rgba(0,0,0,.08);
+    }
+
+    .card{
+      margin-top:22px;
+      padding:28px 24px;
+      border-radius:var(--radius);
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.08);
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(8px);
+    }
+
+    h1{margin:0 0 12px;font-size:36px;letter-spacing:-.4px}
+    h2{margin:20px 0 8px;font-size:19px}
+    p,li{color:var(--muted);line-height:1.7}
+    ul{margin:10px 0 0;padding-left:18px}
+
+    .contact-box{
+      margin-top:18px;
+      padding:18px;
+      border-radius:16px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.14);
+    }
+
+    @media (max-width:680px){
+      .topbar-wrap{flex-direction:column;align-items:stretch}
+      .brand-pill{align-self:flex-start}
+      .nav{justify-content:center}
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <header class="topbar">
-      <strong>Tabulous</strong>
-      <nav class="nav">
-        <a class="pill" href="./index.html">Home</a>
-        <a class="pill" href="./support.html">Support</a>
-        <a class="pill" href="./privacy.html">Privacy</a>
-      </nav>
-    </header>
+    <div class="topbar-wrap">
+      <div class="brand-pill">
+        <img src="./tabulous-wordmark.png" alt="Tabulous" />
+      </div>
+      <header class="topbar">
+        <nav class="nav">
+          <a class="pill" href="./index.html">Home</a>
+          <a class="pill" href="./support.html">Support</a>
+          <a class="pill" href="./privacy.html">Privacy</a>
+        </nav>
+      </header>
+    </div>
 
     <main class="card">
       <h1>Support</h1>
-      <p>If you need help, have a bug to report, or want to suggest an improvement, contact:</p>
-      <p class="email"><a href="mailto:support@tabulous.tools">support@tabulous.tools</a></p>
+      <p>
+        Need help with Tabulous? This page is the quickest way to get support information, report an issue, or ask a question.
+      </p>
 
-      <p style="margin-top:16px;">To help us diagnose issues quickly, please include:</p>
+      <h2>What Tabulous does</h2>
+      <p>
+        Tabulous helps you organize browser tabs into named workspaces, restore them quickly, and recover recent browser sessions with Crash Vault.
+      </p>
+
+      <h2>Common support topics</h2>
       <ul>
-        <li>Your Chrome version (and OS if relevant)</li>
-        <li>What you expected to happen vs what happened</li>
-        <li>Any screenshots or error messages</li>
+        <li>Workspace save and restore issues</li>
+        <li>Crash Vault recovery questions</li>
+        <li>Backup and restore help</li>
+        <li>Permissions and privacy questions</li>
+        <li>Bug reports and feature suggestions</li>
       </ul>
+
+      <div class="contact-box">
+        <h2 style="margin-top:0;">Contact</h2>
+        <p>
+          Email: <strong><a href="mailto:support@tabulous.tools">support@tabulous.tools</a></strong>
+        </p>
+        <p>
+          When reporting an issue, it helps to include:
+        </p>
+        <ul>
+          <li>what you were trying to do</li>
+          <li>what happened instead</li>
+          <li>your Chrome version</li>
+          <li>whether the issue happened during normal workspace use or inside Crash Vault</li>
+        </ul>
+      </div>
     </main>
   </div>
 </body>
