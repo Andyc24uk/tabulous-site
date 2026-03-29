@@ -23,6 +23,10 @@
       --gold-bg:rgba(212,160,23,.08);
       --card:rgba(255,255,255,.08);
       --card-2:rgba(255,255,255,.06);
+      --nav-text:#1f2442;
+      --nav-bg:rgba(255,255,255,.92);
+      --nav-pill-bg:#ffffff;
+      --nav-pill-border:rgba(20,24,45,.12);
     }
 
     *{box-sizing:border-box}
@@ -46,53 +50,71 @@
       padding:28px 18px 64px;
     }
 
-    .topbar{
+    .topbar-wrap{
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap:18px;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    .brand-pill{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:14px 18px;
+      border-radius:999px;
+      background:#ffffff;
+      border:1px solid rgba(20,24,45,.08);
+      box-shadow:var(--shadow);
+      flex:0 0 auto;
+    }
+
+    .brand-pill img{
+      height:52px;
+      width:auto;
+      display:block;
+    }
+
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      gap:14px;
       padding:14px 16px;
-      background:rgba(255,255,255,.07);
+      background:rgba(255,255,255,.10);
       border:1px solid var(--line);
       border-radius:999px;
       box-shadow:var(--shadow);
-      backdrop-filter: blur(10px);
-    }
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      min-width:0;
-    }
-
-    .brand img{
-      height:34px;
-      width:auto;
-      display:block;
+      backdrop-filter:blur(10px);
+      flex:1 1 560px;
+      min-width:280px;
     }
 
     .nav{
       display:flex;
       gap:10px;
       flex-wrap:wrap;
+      width:100%;
+      justify-content:flex-end;
     }
 
     .pill{
-      padding:10px 14px;
+      padding:10px 16px;
       border-radius:999px;
-      border:1px solid var(--line-strong);
-      background:rgba(255,255,255,.10);
-      color:var(--text);
-      font-weight:700;
+      border:1px solid var(--nav-pill-border);
+      background:var(--nav-pill-bg);
+      color:var(--nav-text);
+      font-weight:800;
       font-size:14px;
       white-space:nowrap;
       transition:.18s ease;
+      box-shadow:0 4px 12px rgba(0,0,0,.08);
     }
 
     .pill:hover{
-      background:rgba(255,255,255,.16);
       transform:translateY(-1px);
+      background:#f4f6ff;
     }
 
     .hero{
@@ -173,7 +195,7 @@
       border:1px solid var(--line);
       background:rgba(255,255,255,.08);
       box-shadow:var(--shadow);
-      backdrop-filter: blur(10px);
+      backdrop-filter:blur(10px);
     }
 
     .mini-window{
@@ -268,7 +290,7 @@
       border:1px solid var(--line);
       background:var(--card);
       box-shadow:var(--shadow);
-      backdrop-filter: blur(8px);
+      backdrop-filter:blur(8px);
     }
 
     .card h3{
@@ -294,17 +316,6 @@
       gap:10px;
     }
 
-    .compare{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:20px;
-      margin-top:20px;
-    }
-
-    .compare .card{
-      min-height:100%;
-    }
-
     .checklist{
       margin:14px 0 0;
       padding-left:18px;
@@ -314,6 +325,128 @@
     .checklist li{
       margin:8px 0;
       line-height:1.55;
+    }
+
+    .mockup-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:20px;
+      margin-top:20px;
+    }
+
+    .mockup-card{
+      padding:20px;
+      border-radius:20px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.08);
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(8px);
+    }
+
+    .mockup-label{
+      font-size:15px;
+      font-weight:800;
+      margin-bottom:14px;
+      color:#f4f6ff;
+    }
+
+    .workspace-window{
+      border-radius:18px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(8,11,24,.72);
+    }
+
+    .workspace-body{
+      padding:16px;
+    }
+
+    .workspace-pill{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      padding:12px 14px;
+      border-radius:14px;
+      background:rgba(255,255,255,.07);
+      border:1px solid rgba(255,255,255,.08);
+      margin-bottom:10px;
+    }
+
+    .workspace-pill:last-child{margin-bottom:0}
+
+    .workspace-left{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+    }
+
+    .workspace-color{
+      width:12px;
+      height:12px;
+      border-radius:50%;
+      flex:0 0 auto;
+    }
+
+    .workspace-name{
+      font-weight:800;
+      font-size:15px;
+    }
+
+    .workspace-count{
+      color:var(--muted);
+      font-size:13px;
+      white-space:nowrap;
+    }
+
+    .yt-window{
+      border-radius:18px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(8,11,24,.72);
+    }
+
+    .yt-body{
+      padding:16px;
+    }
+
+    .yt-badge{
+      display:inline-block;
+      margin-bottom:12px;
+      padding:7px 11px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:800;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+      color:#ffd8d8;
+    }
+
+    .yt-item{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
+      padding:11px 12px;
+      border-radius:14px;
+      margin-bottom:10px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.08);
+    }
+
+    .yt-item:last-child{margin-bottom:0}
+
+    .yt-title{
+      font-weight:700;
+      font-size:14px;
+      color:#f4f6ff;
+    }
+
+    .yt-meta{
+      font-size:12px;
+      color:var(--muted);
+      white-space:nowrap;
     }
 
     .footer{
@@ -329,33 +462,36 @@
     }
 
     @media (max-width: 900px){
-      .hero{
+      .hero,
+      .mockup-grid,
+      .grid{
         grid-template-columns:1fr;
       }
 
       h1{
         font-size:44px;
       }
-
-      .grid,
-      .compare{
-        grid-template-columns:1fr;
-      }
     }
 
-    @media (max-width: 640px){
+    @media (max-width: 680px){
+      .topbar-wrap{
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      .brand-pill{
+        align-self:flex-start;
+      }
+
       .topbar{
         border-radius:24px;
-        align-items:flex-start;
-        flex-direction:column;
       }
 
       .nav{
-        width:100%;
+        justify-content:center;
       }
 
       .pill{
-        flex:1 1 auto;
         text-align:center;
       }
 
@@ -385,18 +521,20 @@
 <body>
   <div class="wrap">
 
-    <header class="topbar">
-      <div class="brand">
-        <!-- Replace with your actual uploaded wordmark filename if different -->
+    <div class="topbar-wrap">
+      <div class="brand-pill">
+        <!-- Change filename if your uploaded logo uses a different name -->
         <img src="./tabulous-wordmark.png" alt="Tabulous" />
       </div>
 
-      <nav class="nav">
-        <a class="pill" href="./index.html">Home</a>
-        <a class="pill" href="./support.html">Support</a>
-        <a class="pill" href="./privacy.html">Privacy</a>
-      </nav>
-    </header>
+      <header class="topbar">
+        <nav class="nav">
+          <a class="pill" href="./index.html">Home</a>
+          <a class="pill" href="./support.html">Support</a>
+          <a class="pill" href="./privacy.html">Privacy</a>
+        </nav>
+      </header>
+    </div>
 
     <section class="hero">
       <div class="hero-copy">
@@ -445,63 +583,120 @@
     </section>
 
     <section class="section">
-      <h2 class="section-title">Why people use Tabulous</h2>
+      <h2 class="section-title">What Tabulous helps you do</h2>
       <div class="grid">
         <div class="card">
-          <h3>Workspaces that stay tidy</h3>
+          <h3>Organize tab chaos with Workspaces</h3>
           <p>
-            Group tabs into named, color-coded workspaces for projects, routines, and contexts without cluttering your browser.
+            Group tabs into named, color-coded workspaces like School, Hobbies, Work Stuff, and YouTube so your browser stays clear and structured.
+          </p>
+        </div>
+
+        <div class="card feature-highlight">
+          <h3>Never lose your tabs again with Crash Vault</h3>
+          <p>
+            Crash Vault quietly keeps recent local recovery snapshots so you can restore lost sessions in seconds if something goes wrong.
           </p>
         </div>
 
         <div class="card">
-          <h3>Restore without the chaos</h3>
+          <h3>Easily find your YouTube videos with List View</h3>
           <p>
-            Reopen entire workspaces and recent sessions quickly, with smoother restore behavior for larger groups of tabs.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Local-first by design</h3>
-          <p>
-            Your workspaces, settings, and Crash Vault snapshots stay on your device. Nothing is sent to outside servers.
+            Keep video-heavy workspaces tidy by showing YouTube tabs as a neat list instead of opening everything at once.
           </p>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="card feature-highlight">
-        <h3>⚡ Crash Vault</h3>
+      <h2 class="section-title">See it in action</h2>
+      <div class="mockup-grid">
+        <div class="mockup-card">
+          <div class="mockup-label">Workspaces</div>
+          <div class="workspace-window">
+            <div class="mini-top">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <div class="workspace-body">
+              <div class="workspace-pill">
+                <div class="workspace-left">
+                  <span class="workspace-color" style="background:#6fa8ff"></span>
+                  <span class="workspace-name">School</span>
+                </div>
+                <span class="workspace-count">8 tabs</span>
+              </div>
+
+              <div class="workspace-pill">
+                <div class="workspace-left">
+                  <span class="workspace-color" style="background:#f3b34d"></span>
+                  <span class="workspace-name">Work Stuff</span>
+                </div>
+                <span class="workspace-count">11 tabs</span>
+              </div>
+
+              <div class="workspace-pill">
+                <div class="workspace-left">
+                  <span class="workspace-color" style="background:#7edc9b"></span>
+                  <span class="workspace-name">Hobbies</span>
+                </div>
+                <span class="workspace-count">5 tabs</span>
+              </div>
+
+              <div class="workspace-pill">
+                <div class="workspace-left">
+                  <span class="workspace-color" style="background:#d28cff"></span>
+                  <span class="workspace-name">YouTube</span>
+                </div>
+                <span class="workspace-count">14 tabs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mockup-card">
+          <div class="mockup-label">YouTube List View</div>
+          <div class="yt-window">
+            <div class="mini-top">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <div class="yt-body">
+              <div class="yt-badge">YouTube-heavy workspace</div>
+
+              <div class="yt-item">
+                <span class="yt-title">How to Build a Better Desk Setup</span>
+                <span class="yt-meta">12:43</span>
+              </div>
+
+              <div class="yt-item">
+                <span class="yt-title">Top 10 Retro Games of the 90s</span>
+                <span class="yt-meta">8:17</span>
+              </div>
+
+              <div class="yt-item">
+                <span class="yt-title">Relaxing Jazz for Late-Night Work</span>
+                <span class="yt-meta">1:02:11</span>
+              </div>
+
+              <div class="yt-item">
+                <span class="yt-title">Mini Documentary: Lost Railways</span>
+                <span class="yt-meta">24:09</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h3>Local-first by design</h3>
         <p>
-          Crash Vault quietly keeps a rolling history of your recent browser session in the background. If your browser crashes, freezes, or a window disappears, you can recover it in seconds.
+          Your workspaces, settings, and Crash Vault snapshots stay on your device. Tabulous is built to be practical, lightweight, and trustworthy.
         </p>
-
-        <ul class="checklist">
-          <li>Automatic recovery snapshots of recent tabs and windows</li>
-          <li>Restore lost sessions even if they were never saved as workspaces</li>
-          <li>Save a recovery snapshot as a normal workspace when you want to keep it</li>
-          <li>Runs locally in the background with no external sync or tracking</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title">Built for control</h2>
-      <div class="compare">
-        <div class="card">
-          <h3>Tabulous</h3>
-          <p>
-            Clear workspaces, reliable restore, local backup, and recovery tools that keep you in control of your browser.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>What makes it different</h3>
-          <p>
-            Tabulous focuses on reliability, simplicity, and practical recovery — not just rearranging tabs and hoping for the best.
-          </p>
-        </div>
       </div>
     </section>
 
