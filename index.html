@@ -22,9 +22,7 @@
       --gold:#d4a017;
       --gold-bg:rgba(212,160,23,.08);
       --card:rgba(255,255,255,.08);
-      --card-2:rgba(255,255,255,.06);
       --nav-text:#1f2442;
-      --nav-bg:rgba(255,255,255,.92);
       --nav-pill-bg:#ffffff;
       --nav-pill-border:rgba(20,24,45,.12);
     }
@@ -54,7 +52,7 @@
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap:16px;
+      gap:12px;
       flex-wrap:wrap;
     }
 
@@ -62,7 +60,7 @@
       display:flex;
       align-items:center;
       justify-content:center;
-      padding:14px 18px;
+      padding:14px 20px;
       border-radius:999px;
       background:#ffffff;
       border:1px solid rgba(20,24,45,.08);
@@ -71,7 +69,7 @@
     }
 
     .brand-pill img{
-      height:52px;
+      height:54px;
       width:auto;
       display:block;
     }
@@ -81,13 +79,13 @@
       align-items:center;
       justify-content:flex-end;
       gap:14px;
-      padding:14px 16px;
-      background:rgba(255,255,255,.10);
+      padding:16px 18px;
+      background:rgba(255,255,255,.11);
       border:1px solid var(--line);
       border-radius:999px;
       box-shadow:var(--shadow);
       backdrop-filter:blur(10px);
-      flex:1 1 560px;
+      flex:1 1 620px;
       min-width:280px;
     }
 
@@ -100,7 +98,7 @@
     }
 
     .pill{
-      padding:10px 16px;
+      padding:11px 17px;
       border-radius:999px;
       border:1px solid var(--nav-pill-border);
       background:var(--nav-pill-bg);
@@ -119,7 +117,7 @@
 
     .hero{
       display:grid;
-      grid-template-columns: 1.15fr .85fr;
+      grid-template-columns:1.12fr .88fr;
       gap:28px;
       align-items:center;
       margin-top:42px;
@@ -127,11 +125,12 @@
 
     .hero-copy{
       padding:10px 4px;
+      max-width:640px;
     }
 
     .eyebrow{
       display:inline-block;
-      margin-bottom:14px;
+      margin-bottom:18px;
       padding:8px 12px;
       border-radius:999px;
       border:1px solid rgba(212,160,23,.35);
@@ -151,7 +150,7 @@
 
     .sub{
       margin:0 0 28px;
-      max-width:640px;
+      max-width:600px;
       color:var(--muted);
       font-size:19px;
       line-height:1.65;
@@ -198,11 +197,13 @@
       backdrop-filter:blur(10px);
     }
 
-    .mini-window{
+    .mini-window,
+    .workspace-window,
+    .yt-window{
       border-radius:18px;
       overflow:hidden;
       border:1px solid rgba(255,255,255,.14);
-      background:rgba(8,11,24,.65);
+      background:rgba(8,11,24,.68);
     }
 
     .mini-top{
@@ -221,11 +222,14 @@
       background:rgba(255,255,255,.35);
     }
 
-    .mini-body{
+    .mini-body,
+    .workspace-body,
+    .yt-body{
       padding:18px;
     }
 
-    .mini-title{
+    .mini-title,
+    .mockup-label{
       font-size:14px;
       font-weight:800;
       color:#ffe59b;
@@ -316,22 +320,12 @@
       gap:10px;
     }
 
-    .checklist{
-      margin:14px 0 0;
-      padding-left:18px;
-      color:var(--muted);
-    }
-
-    .checklist li{
-      margin:8px 0;
-      line-height:1.55;
-    }
-
     .mockup-grid{
       display:grid;
       grid-template-columns:repeat(2, minmax(0,1fr));
       gap:20px;
       margin-top:20px;
+      align-items:stretch;
     }
 
     .mockup-card{
@@ -341,24 +335,14 @@
       background:rgba(255,255,255,.08);
       box-shadow:var(--shadow);
       backdrop-filter:blur(8px);
+      height:100%;
+      display:flex;
+      flex-direction:column;
     }
 
-    .mockup-label{
-      font-size:15px;
-      font-weight:800;
-      margin-bottom:14px;
-      color:#f4f6ff;
-    }
-
-    .workspace-window{
-      border-radius:18px;
-      overflow:hidden;
-      border:1px solid rgba(255,255,255,.14);
-      background:rgba(8,11,24,.72);
-    }
-
-    .workspace-body{
-      padding:16px;
+    .workspace-body,
+    .yt-body{
+      flex:1;
     }
 
     .workspace-pill{
@@ -400,17 +384,6 @@
       white-space:nowrap;
     }
 
-    .yt-window{
-      border-radius:18px;
-      overflow:hidden;
-      border:1px solid rgba(255,255,255,.14);
-      background:rgba(8,11,24,.72);
-    }
-
-    .yt-body{
-      padding:16px;
-    }
-
     .yt-badge{
       display:inline-block;
       margin-bottom:12px;
@@ -437,10 +410,45 @@
 
     .yt-item:last-child{margin-bottom:0}
 
+    .yt-left{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+    }
+
+    .yt-icon{
+      width:16px;
+      height:16px;
+      flex:0 0 auto;
+      display:block;
+      object-fit:contain;
+      border-radius:3px;
+    }
+
+    .yt-fallback{
+      width:16px;
+      height:16px;
+      border-radius:4px;
+      flex:0 0 auto;
+      display:none;
+      align-items:center;
+      justify-content:center;
+      background:#ff0033;
+      color:#fff;
+      font-size:9px;
+      font-weight:900;
+      line-height:1;
+    }
+
     .yt-title{
       font-weight:700;
       font-size:14px;
       color:#f4f6ff;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      max-width:100%;
     }
 
     .yt-meta{
@@ -523,7 +531,7 @@
 
     <div class="topbar-wrap">
       <div class="brand-pill">
-        <!-- Change filename if your uploaded logo uses a different name -->
+        <!-- Change filename if needed -->
         <img src="./tabulous-wordmark.png" alt="Tabulous" />
       </div>
 
@@ -588,7 +596,7 @@
         <div class="card">
           <h3>Organize tab chaos with Workspaces</h3>
           <p>
-            Group tabs into named, color-coded workspaces like School, Hobbies, Work Stuff, and YouTube so your browser stays clear and structured.
+            Group tabs into named, color-coded spaces like School, Hobbies, Work Stuff, and YouTube so your browser stays clear and structured.
           </p>
         </div>
 
@@ -667,22 +675,38 @@
               <div class="yt-badge">YouTube-heavy workspace</div>
 
               <div class="yt-item">
-                <span class="yt-title">How to Build a Better Desk Setup</span>
+                <div class="yt-left">
+                  <img class="yt-icon" src="./YTFavicon.ico" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                  <span class="yt-fallback">▶</span>
+                  <span class="yt-title">How to Build a Better Desk Setup</span>
+                </div>
                 <span class="yt-meta">12:43</span>
               </div>
 
               <div class="yt-item">
-                <span class="yt-title">Top 10 Retro Games of the 90s</span>
+                <div class="yt-left">
+                  <img class="yt-icon" src="./YTFavicon.ico" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                  <span class="yt-fallback">▶</span>
+                  <span class="yt-title">Top 10 Retro Games of the 90s</span>
+                </div>
                 <span class="yt-meta">8:17</span>
               </div>
 
               <div class="yt-item">
-                <span class="yt-title">Relaxing Jazz for Late-Night Work</span>
+                <div class="yt-left">
+                  <img class="yt-icon" src="./YTFavicon.ico" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                  <span class="yt-fallback">▶</span>
+                  <span class="yt-title">Relaxing Jazz for Late-Night Work</span>
+                </div>
                 <span class="yt-meta">1:02:11</span>
               </div>
 
               <div class="yt-item">
-                <span class="yt-title">Mini Documentary: Lost Railways</span>
+                <div class="yt-left">
+                  <img class="yt-icon" src="./YTFavicon.ico" alt="" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                  <span class="yt-fallback">▶</span>
+                  <span class="yt-title">Mini Documentary: Lost Railways</span>
+                </div>
                 <span class="yt-meta">24:09</span>
               </div>
             </div>
