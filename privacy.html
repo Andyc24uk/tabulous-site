@@ -35,26 +35,44 @@
     <main class="card">
       <h1>Privacy Policy</h1>
       <p>
-        Tabulous is designed with privacy as a core principle. We do not collect, transmit, store on external servers,
-        or sell personal data.
+        Tabulous is designed with privacy as a core principle. We do not sell, transmit, or store user data on external servers.
       </p>
 
-      <h2>Data collection</h2>
+      <h2>What Tabulous stores</h2>
       <p>
-        Tabulous does not collect personal information, browsing history, or identifiable user data for analytics,
-        advertising, or tracking.
+        Tabulous stores workspace data, settings, and optional recovery information locally on your device using Chrome’s built-in storage APIs.
+        This may include workspace names, colors, tab URLs, window state information, and recent recovery snapshots used by Crash Vault.
       </p>
 
-      <h2>Local storage only</h2>
+      <h2>Crash Vault</h2>
       <p>
-        Workspace data (such as workspace names, colors, and tab URLs) is stored locally on your device using Chrome’s
-        built-in storage APIs (<code>chrome.storage</code>). This information remains on your browser profile and is not sent externally.
+        Crash Vault is Tabulous’s local recovery feature. It stores recent browser session information, such as open tabs and window states,
+        so you can recover your work after a browser crash, accidental closure, or similar issue.
+      </p>
+      <p>
+        Crash Vault data:
+      </p>
+      <ul>
+        <li>is stored locally on your device</li>
+        <li>is not transmitted to the developer or any third party</li>
+        <li>is not used for analytics, advertising, or tracking</li>
+      </ul>
+
+      <h2>Backups and exports</h2>
+      <p>
+        If you choose to export a backup, Tabulous uses Chrome’s downloads functionality to save a file locally to your device.
+        This is a user-initiated action only.
       </p>
 
       <h2>Permissions</h2>
       <p>
-        Tabulous requests permissions only to provide its core features (managing tabs/windows, saving workspace metadata,
-        and related UI functionality). The extension does not transmit this data to any external service.
+        Tabulous requests only the permissions needed for its core features, including managing tabs and windows, saving local workspace data,
+        creating local recovery snapshots, showing optional context-menu actions, and exporting user-requested backup files.
+      </p>
+
+      <h2>No tracking or analytics</h2>
+      <p>
+        Tabulous does not use analytics, advertising frameworks, tracking scripts, or remote data collection.
       </p>
 
       <h2>Contact</h2>
