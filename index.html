@@ -3,201 +3,245 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tabulous</title>
-  <meta name="description" content="Tabulous helps you organize browser windows into named, color-coded workspaces." />
+  <title>Tabulous — Never lose your tabs again</title>
+
   <style>
     :root{
       --bg:#0b1020;
-      --card:#0f1630;
       --text:#e9ecff;
       --muted:#b7bde6;
       --line:rgba(255,255,255,.10);
-      --accent:#7c5cff;
-      --accent2:#2dd4ff;
-      --btn:#141d3e;
-      --shadow: 0 14px 40px rgba(0,0,0,.35);
+      --shadow:0 14px 40px rgba(0,0,0,.35);
       --radius:16px;
-      --max:980px;
+      --max:1100px;
+      --accent:#6c8cff;
+      --gold:#d4a017;
     }
+
     *{box-sizing:border-box}
+
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      background:
-        radial-gradient(1200px 600px at 20% -10%, rgba(124,92,255,.35), transparent 60%),
-        radial-gradient(900px 500px at 80% 0%, rgba(45,212,255,.20), transparent 55%),
-        linear-gradient(180deg, var(--bg), #070a14 75%);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background:linear-gradient(180deg,var(--bg),#070a14 75%);
       color:var(--text);
     }
-    a{color:inherit}
-    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 56px;}
+
+    .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:28px 18px 60px;
+    }
+
     .topbar{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:16px; padding:14px 16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:14px 16px;
       background:rgba(255,255,255,.04);
       border:1px solid var(--line);
       border-radius:999px;
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(10px);
+      box-shadow:var(--shadow);
     }
-    .brand{
-      display:flex; align-items:center; gap:10px; min-width:0;
-      font-weight:800; letter-spacing:.2px;
-    }
-    .brand small{display:block; font-weight:600; color:var(--muted); margin-top:2px}
+
     .nav{
-      display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:flex-end;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
     }
+
     .pill{
       text-decoration:none;
       padding:10px 12px;
       border-radius:999px;
       border:1px solid var(--line);
       background:rgba(255,255,255,.03);
-      color:var(--text);
-      font-weight:650;
+      font-weight:600;
       font-size:14px;
-      transition: transform .08s ease, background .2s ease, border-color .2s ease;
       white-space:nowrap;
     }
-    .pill:hover{transform: translateY(-1px); background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.18)}
+
     .hero{
-      margin-top:18px;
-      padding:34px 22px;
-      border-radius: var(--radius);
-      border:1px solid var(--line);
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-      box-shadow: var(--shadow);
+      text-align:center;
+      margin-top:50px;
     }
-    .logo{
-      display:flex; align-items:center; gap:14px; flex-wrap:wrap;
-      margin-bottom:18px;
-    }
-    .wordmark{
-      height:44px;
-      max-width: 100%;
-      object-fit: contain;
-      display:block;
-      filter: drop-shadow(0 10px 22px rgba(0,0,0,.35));
-    }
+
     h1{
-      margin:0 0 10px;
-      font-size:40px;
-      line-height:1.1;
-      letter-spacing:-.6px;
+      font-size:44px;
+      margin:0 0 16px;
+      letter-spacing:-0.5px;
     }
-    p{margin:10px 0; color:var(--muted); font-size:16px; line-height:1.65;}
+
+    .sub{
+      color:var(--muted);
+      font-size:18px;
+      max-width:600px;
+      margin:0 auto 28px;
+      line-height:1.6;
+    }
+
+    .cta{
+      display:inline-block;
+      padding:14px 22px;
+      border-radius:999px;
+      background:var(--accent);
+      color:white;
+      font-weight:700;
+      text-decoration:none;
+      box-shadow:0 8px 20px rgba(108,140,255,.4);
+      transition:.2s;
+    }
+
+    .cta:hover{
+      transform:translateY(-2px);
+    }
+
+    .section{
+      margin-top:60px;
+    }
+
     .grid{
       display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap:16px;
-      margin-top:18px;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:20px;
     }
+
     .card{
-      padding:18px 18px;
-      border-radius: var(--radius);
+      padding:22px;
+      border-radius:var(--radius);
       border:1px solid var(--line);
-      background: rgba(255,255,255,.03);
+      background:rgba(255,255,255,.03);
+      box-shadow:var(--shadow);
     }
-    .card h2{margin:0 0 10px; font-size:18px}
-    ul{margin:0; padding-left:18px; color:var(--muted); line-height:1.65}
-    .ctaRow{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
-    .btn{
-      text-decoration:none;
-      padding:12px 14px;
-      border-radius:12px;
-      background: var(--btn);
-      border:1px solid rgba(255,255,255,.14);
-      font-weight:750;
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
+
+    .card h3{
+      margin:0 0 8px;
+      font-size:18px;
     }
-    .btn.primary{
-      background: linear-gradient(135deg, rgba(124,92,255,.95), rgba(45,212,255,.85));
-      border:0;
-      color:#071023;
+
+    .card p{
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.6;
     }
+
+    .highlight{
+      border:2px solid var(--gold);
+      background:rgba(212,160,23,.08);
+    }
+
     .footer{
-      margin-top:18px;
-      color:rgba(255,255,255,.55);
-      font-size:13px;
+      margin-top:60px;
       text-align:center;
-    }
-    code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
-    @media (max-width: 860px){
-      .grid{grid-template-columns:1fr}
-      h1{font-size:34px}
-      .wordmark{height:40px}
-      .nav{justify-content:flex-start}
-      .topbar{border-radius:18px}
+      color:rgba(255,255,255,.5);
+      font-size:13px;
     }
   </style>
 </head>
+
 <body>
   <div class="wrap">
-    <header class="topbar">
-      <div class="brand" aria-label="Tabulous">
-        <div>
-          <strong>Tabulous</strong>
-          <small>Workspaces for your browser</small>
-        </div>
-      </div>
 
-      <nav class="nav" aria-label="Site navigation">
+    <!-- NAV -->
+    <header class="topbar">
+      <strong>Tabulous</strong>
+      <nav class="nav">
         <a class="pill" href="./index.html">Home</a>
         <a class="pill" href="./support.html">Support</a>
         <a class="pill" href="./privacy.html">Privacy</a>
       </nav>
     </header>
 
-    <main class="hero">
-      <div class="logo">
-        <!-- Put your wordmark file in the repo as: tabulous-wordmark.png -->
-        <img class="wordmark" src="tabulous-wordmark.png" alt="Tabulous wordmark logo" />
-      </div>
-
-      <h1>Stay organized without tab overload.</h1>
-      <p>
-        Tabulous helps you treat browser windows as named, color-coded workspaces — so you can focus on what matters
-        and keep your browser tidy even when juggling multiple projects.
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Never lose your tabs again.</h1>
+      <p class="sub">
+        Organize your browser into clean workspaces — and recover everything instantly if something goes wrong.
       </p>
 
-      <div class="ctaRow">
-        <a class="btn primary" href="./support.html">Get support</a>
-        <a class="btn" href="./privacy.html">Read privacy policy</a>
-      </div>
+      <a class="cta" href="https://chromewebstore.google.com/detail/tabulous/iljkidmanamoojdglpbpilnepdpcaiij">
+        Add to Chrome
+      </a>
+    </section>
 
-      <section class="grid" aria-label="Key information">
+    <!-- FEATURES -->
+    <section class="section">
+      <div class="grid">
+
         <div class="card">
-          <h2>Key features</h2>
-          <ul>
-            <li>Group windows into named workspaces</li>
-            <li>Color-code workspaces for instant visual recognition</li>
-            <li>Open/close/restore workspace windows without losing your place</li>
-            <li>Send tabs between workspaces quickly</li>
-            <li>Optional auto-sleep for inactive tabs to save memory</li>
-            <li>YouTube workspaces can be handled as a neat list instead of opening everything at once</li>
-            <li>All data stored locally — nothing is sent externally</li>
-          </ul>
+          <h3>Workspaces</h3>
+          <p>
+            Group tabs into named, color-coded workspaces for different projects and contexts.
+          </p>
         </div>
 
         <div class="card">
-          <h2>Contact</h2>
-          <p>If you need help, email:</p>
-          <p><strong><a href="mailto:support@tabulous.tools">support@tabulous.tools</a></strong></p>
-          <p style="margin-top:12px">Tip: include your Chrome version and a brief description of the issue.</p>
+          <h3>Instant switching</h3>
+          <p>
+            Open, close, or restore entire workspace windows in seconds without losing your place.
+          </p>
         </div>
-      </section>
 
-      <div class="footer">
-        © <span id="y"></span> Tabulous • Built for Chrome • <code>All data stored locally</code>
+        <div class="card">
+          <h3>Tab control</h3>
+          <p>
+            Move tabs between workspaces and choose whether to stay or switch automatically.
+          </p>
+        </div>
+
       </div>
-    </main>
+    </section>
+
+    <!-- CRASH VAULT (MAIN SELLING POINT) -->
+    <section class="section">
+      <div class="card highlight">
+        <h3>⚡ Crash Vault</h3>
+        <p>
+          Tabulous quietly takes automatic snapshots of your open tabs in the background.
+        </p>
+        <p>
+          If your browser crashes, freezes, or something gets lost — you can restore everything in seconds.
+        </p>
+        <p>
+          No digging through history. No guessing. Just one click and you're back.
+        </p>
+      </div>
+    </section>
+
+    <!-- TRUST / PRIVACY -->
+    <section class="section">
+      <div class="grid">
+
+        <div class="card">
+          <h3>Local-first</h3>
+          <p>
+            All data is stored locally in your browser. Nothing is sent to external servers.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Fast & lightweight</h3>
+          <p>
+            Designed to run quietly in the background without slowing down your browser.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Built for reliability</h3>
+          <p>
+            Focused on stability and control — not AI guesswork.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      © Tabulous · <a href="./privacy.html">Privacy</a> · <a href="./support.html">Support</a>
+    </div>
+
   </div>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
