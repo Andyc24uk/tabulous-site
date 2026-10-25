@@ -20,7 +20,7 @@
     let response;
     try {
       response = await fetch(config.origin + path, { method, credentials: "omit", cache: "no-store", redirect: "error",
-        signal: AbortSignal.timeout(20000), headers: { apikey: config.publicKey, "Content-Type": "application/json", ...(token ? { Authorization: `Bearer ${token}` } : {}) },
+        signal: AbortSignal.timeout(20000), headers: { apikey: config.publicKey, "Content-Type": "application/json", ...(path === `/functions/v1/${config.accountFunction}` ? { "x-tabulous-client-version": "2.0.1" } : {}), ...(token ? { Authorization: `Bearer ${token}` } : {}) },
         ...(body === undefined ? {} : { body: JSON.stringify(body) }) });
     } catch { throw new Error("The account service could not be reached. Please try again. Your local Workspaces are unaffected."); }
     const result = response.status === 204 ? null : await response.json().catch(() => null);
@@ -74,7 +74,7 @@
       if (user?.id !== result.user.id || user.is_anonymous || typeof user.email !== "string") throw new Error("The account could not be verified.");
       session = result; byId("account-profile").textContent = user.email; verify.hidden = true; verify.reset();
       announce("Signed in. Your plan is being checked with the server. Signing in does not upload your Workspaces.");
-      await refresh(); announce("Account status refreshed. No payment has been started by signing in.");
+      await refresh(); announce(byId("plan-status").textContent);
     } catch (e) { if (active === generation) announce(e.message); }
     finally { busy = false; controls(); }
   });
@@ -103,6 +103,6 @@
   byId("start-checkout").addEventListener("click", () => redirectBilling("checkout", "https://checkout.stripe.com"));
   byId("billing-portal").addEventListener("click", () => redirectBilling("portal", "https://billing.stripe.com"));
   byId("selected-plan").textContent = plan ? `Selected plan: ${{ monthly: "Pro Monthly — $1.99/month", annual: "Pro Annual — $14.99/year", lifetime: "Pro Lifetime — $29.99 one-time", founder: "Founder's Lifetime — $19.99 one-time" }[plan]} (USD).` : "Choose a plan on the pricing page if you want to check purchasing availability.";
-  if (new URLSearchParams(location.search).has("checkout")) announce("Welcome back from checkout. This return link does not confirm payment. Sign in to refresh your server-verified plan; confirmation may still be processing.");
+  if (new URLSearchParams(location.search).has("checkout")) announce("Welcome back. Sign in to see your payment status and Pro access. You do not need the extension installed.");
   controls();
 })();
