@@ -1,0 +1,97 @@
+{
+  "result": "PASS",
+  "deployedCommit": "3d14a25d861125bb6dfbf4217780754f53d13401",
+  "checkedAt": "2026-10-25T12:22:05.296Z",
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "contentMatch": true
+    },
+    {
+      "path": "/pricing.html",
+      "status": 200,
+      "contentMatch": true
+    },
+    {
+      "path": "/account.html",
+      "status": 200,
+      "contentMatch": true
+    },
+    {
+      "path": "/support.html",
+      "status": 200,
+      "contentMatch": true
+    },
+    {
+      "path": "/privacy.html",
+      "status": 200,
+      "contentMatch": true
+    },
+    {
+      "path": "/terms.html",
+      "status": 200,
+      "contentMatch": true
+    },
+    {
+      "path": "/delete-account.html",
+      "status": 200,
+      "contentMatch": true
+    },
+    {
+      "path": "/checkout-success.html",
+      "status": 200,
+      "contentMatch": true
+    },
+    {
+      "path": "/checkout-cancel.html",
+      "status": 200,
+      "contentMatch": true
+    },
+    {
+      "path": "/portal-return.html",
+      "status": 200,
+      "contentMatch": true
+    },
+    {
+      "path": "/site.css",
+      "status": 200,
+      "contentMatch": true
+    },
+    {
+      "path": "/account.js",
+      "status": 200,
+      "contentMatch": true
+    },
+    {
+      "path": "/website-config.js",
+      "status": 200,
+      "contentMatch": true
+    },
+    {
+      "path": "/assets/tabulous-mark.svg",
+      "status": 200,
+      "contentMatch": true
+    },
+    {
+      "path": "/assets/dashboard-demo.png",
+      "status": 200,
+      "contentMatch": true
+    },
+    {
+      "path": "/assets/workspace-demo.png",
+      "status": 200,
+      "contentMatch": true
+    },
+    {
+      "path": "/assets/fonts/Inter-Variable.woff2",
+      "status": 200,
+      "contentMatch": true
+    }
+  ],
+  "httpRedirect": {
+    "status": 301,
+    "location": "https://tabulous.tools/account.html"
+  },
+  "realPaymentsAttempted": false
+}

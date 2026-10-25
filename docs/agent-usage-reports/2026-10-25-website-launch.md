@@ -25,7 +25,9 @@ The established support mailbox is reused. Its delivery was not verified. Accoun
 - PASS — synthetic OTP sign-in plus online user verification, complimentary Pro, authenticated Founder count, fail-closed purchasing, server rejection of checkout, sign-out clearing account data, and return URLs granting no access.
 - PASS — screenshots are genuine packaged 2.0.1 UI with synthetic public fixture data (14 Workspaces / 84 tabs) in a disposable profile. No real account or owner library is shown.
 - Headless evidence: `/var/folders/kt/7j1mtxts6532nrz3fzwjkk4w0000gn/T/tabulous-native-website-Sbm1Ul`. Machine-readable results: `docs/verification/2026-10-25-website-headless.json`.
-- Pending — authorised GitHub Pages deployment and HTTP verification.
+- PASS — production site deployed from `3d14a25d861125bb6dfbf4217780754f53d13401`; GitHub Pages build reported built at 2026-10-25T12:21:18Z. All 17 checked page/asset responses were HTTP 200 and SHA-256 identical to the validated files.
+- PASS — existing Pages HTTPS enforcement enabled using its existing approved certificate; HTTP account URL returns 301 to its exact HTTPS URL. No DNS, domain, hosting provider, extension listing, backend gates or payment configuration were changed.
+- Live URLs: `https://tabulous.tools/`, `https://tabulous.tools/account.html`, `https://tabulous.tools/pricing.html`. Production evidence: `docs/verification/2026-10-25-website-production.json`.
 
 ## Agent Usage & Division of Labour
 
@@ -39,3 +41,7 @@ The established support mailbox is reused. Its delivery was not verified. Accoun
 ## Commercial activation follow-up
 
 The current Chrome Web Store listing declares the publisher a Non-trader. The owner must review that declaration before commercial submission/activation. No listing or billing activation was changed.
+
+## Remaining limitations
+
+Email delivery and live authenticated production account actions were not exercised by this website task; browser auth/billing tests use synthetic responses. Their actual server integration and activation gates belong to the parent infrastructure task. No real checkout, charge or owner-profile operation was performed. Headless verification does not establish macOS foreground/focus semantics; no focus interruption was observed.
