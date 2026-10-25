@@ -1,339 +1,66 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tabulous Privacy Policy</title>
-
-  <style>
-    :root{
-      --bg1:#111a3d;
-      --bg2:#2d1b69;
-      --bg3:#3b247d;
-      --text:#f4f6ff;
-      --muted:#d6dcff;
-      --line:rgba(255,255,255,.18);
-      --line-strong:rgba(255,255,255,.28);
-      --shadow:0 16px 40px rgba(0,0,0,.28);
-      --radius:18px;
-      --max:1120px;
-      --gold:#d4a017;
-      --gold-bg:rgba(212,160,23,.08);
-      --card:rgba(255,255,255,.08);
-      --nav-text:#1f2442;
-      --nav-pill-bg:#ffffff;
-      --nav-pill-border:rgba(20,24,45,.12);
-    }
-
-    *{box-sizing:border-box}
-
-    body{
-      margin:0;
-      font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      color:var(--text);
-      background:
-        radial-gradient(circle at top left, rgba(125,162,255,.22), transparent 30%),
-        radial-gradient(circle at top right, rgba(159,124,255,.18), transparent 28%),
-        linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 55%, var(--bg3) 100%);
-      min-height:100vh;
-    }
-
-    a{color:inherit;text-decoration:none}
-
-    .wrap{
-      max-width:var(--max);
-      margin:0 auto;
-      padding:28px 18px 64px;
-    }
-
-    .topbar-wrap{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      flex-wrap:wrap;
-    }
-
-    .brand-pill{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:14px 20px;
-      border-radius:999px;
-      background:#ffffff;
-      border:1px solid rgba(20,24,45,.08);
-      box-shadow:var(--shadow);
-      flex:0 0 auto;
-    }
-
-    .brand-pill img{
-      height:54px;
-      width:auto;
-      display:block;
-    }
-
-    .topbar{
-      display:flex;
-      align-items:center;
-      justify-content:flex-end;
-      gap:14px;
-      padding:16px 18px;
-      background:rgba(255,255,255,.11);
-      border:1px solid var(--line);
-      border-radius:999px;
-      box-shadow:var(--shadow);
-      backdrop-filter:blur(10px);
-      flex:1 1 620px;
-      min-width:280px;
-    }
-
-    .nav{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      width:100%;
-      justify-content:flex-end;
-    }
-
-    .pill{
-      padding:11px 17px;
-      border-radius:999px;
-      border:1px solid var(--nav-pill-border);
-      background:var(--nav-pill-bg);
-      color:var(--nav-text);
-      font-weight:800;
-      font-size:14px;
-      white-space:nowrap;
-      transition:.18s ease;
-      box-shadow:0 4px 12px rgba(0,0,0,.08);
-    }
-
-    .pill:hover{
-      transform:translateY(-1px);
-      background:#f4f6ff;
-    }
-
-    .page-head{
-      margin-top:42px;
-      max-width:760px;
-    }
-
-    .eyebrow{
-      display:inline-block;
-      margin-bottom:16px;
-      padding:8px 12px;
-      border-radius:999px;
-      border:1px solid rgba(212,160,23,.35);
-      background:var(--gold-bg);
-      color:#ffe59b;
-      font-size:13px;
-      font-weight:800;
-      letter-spacing:.2px;
-    }
-
-    h1{
-      margin:0 0 14px;
-      font-size:48px;
-      line-height:1.04;
-      letter-spacing:-1px;
-    }
-
-    .lead{
-      margin:0;
-      color:var(--muted);
-      font-size:18px;
-      line-height:1.7;
-      max-width:760px;
-    }
-
-    .section{
-      margin-top:34px;
-      max-width:860px;
-    }
-
-    .section h2{
-      margin:0 0 10px;
-      font-size:24px;
-      letter-spacing:-.3px;
-    }
-
-    .section p,
-    .section li{
-      color:var(--muted);
-      line-height:1.75;
-      font-size:16px;
-    }
-
-    .section ul{
-      margin:10px 0 0;
-      padding-left:18px;
-    }
-
-    .info-card{
-      margin-top:18px;
-      padding:22px;
-      border-radius:18px;
-      border:1px solid var(--line);
-      background:var(--card);
-      box-shadow:var(--shadow);
-      backdrop-filter:blur(8px);
-    }
-
-    .info-card h3{
-      margin:0 0 8px;
-      font-size:18px;
-    }
-
-    .last-updated{
-      margin-top:28px;
-      color:rgba(255,255,255,.66);
-      font-size:13px;
-    }
-
-    .footer{
-      margin-top:64px;
-      padding-top:18px;
-      border-top:1px solid rgba(255,255,255,.12);
-      display:flex;
-      justify-content:space-between;
-      gap:16px;
-      flex-wrap:wrap;
-      color:rgba(255,255,255,.68);
-      font-size:13px;
-    }
-
-    @media (max-width:900px){
-      h1{font-size:40px}
-    }
-
-    @media (max-width:680px){
-      .topbar-wrap{
-        flex-direction:column;
-        align-items:stretch;
-      }
-
-      .brand-pill{
-        align-self:flex-start;
-      }
-
-      .topbar{
-        border-radius:24px;
-      }
-
-      .nav{
-        justify-content:center;
-      }
-
-      .pill{
-        text-align:center;
-      }
-
-      .footer{
-        flex-direction:column;
-      }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="How Tabulous handles local Workspaces, optional accounts, cloud sync and billing.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src https://hgdolsgkvyxivlhwimsr.supabase.co; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta name="theme-color" content="#f7f8fc">
+<title>Privacy — Tabulous</title>
+<link rel="canonical" href="https://tabulous.tools/privacy.html">
+<link rel="icon" type="image/svg+xml" href="assets/tabulous-mark.svg">
+<link rel="stylesheet" href="site.css">
 </head>
-
 <body>
-  <div class="wrap">
-
-    <div class="topbar-wrap">
-      <div class="brand-pill">
-        <img src="./tabulous-wordmark.png" alt="Tabulous" />
-      </div>
-
-      <header class="topbar">
-        <nav class="nav">
-          <a class="pill" href="./index.html">Home</a>
-          <a class="pill" href="./support.html">Support</a>
-          <a class="pill" href="./privacy.html">Privacy</a>
-        </nav>
-      </header>
-    </div>
-
-    <section class="page-head">
-      <div class="eyebrow">Privacy-first by design</div>
-      <h1>Privacy Policy</h1>
-      <p class="lead">
-        Tabulous is built to be useful without becoming invasive. Your workspaces, settings, and recovery data stay local to your device.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>What Tabulous stores</h2>
-      <p>
-        Tabulous stores workspace data, settings, and optional recovery information locally on your device using Chrome’s built-in storage APIs.
-        This may include workspace names, colors, tab URLs, window state information, and recent recovery snapshots used by Crash Vault.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Crash Vault</h2>
-      <p>
-        Crash Vault is Tabulous’s local recovery feature. It stores recent browser session information, such as open tabs and window states,
-        so you can recover your work after a browser crash, accidental closure, or similar issue.
-      </p>
-
-      <div class="info-card">
-        <h3>Crash Vault data is:</h3>
-        <ul>
-          <li>stored locally on your device</li>
-          <li>not transmitted to the developer or any third party</li>
-          <li>not used for analytics, advertising, or tracking</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Backups and exports</h2>
-      <p>
-        If you choose to export a backup, Tabulous uses Chrome’s downloads functionality to save a file locally to your device.
-        This is a user-initiated action only.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Permissions</h2>
-      <p>
-        Tabulous requests only the permissions needed for its core features, including managing tabs and windows, saving local workspace data,
-        creating local recovery snapshots, showing optional context-menu actions, and exporting user-requested backup files.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>No tracking or analytics</h2>
-      <p>
-        Tabulous does not use analytics, advertising frameworks, tracking scripts, or remote data collection.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Contact</h2>
-      <div class="info-card">
-        <p style="margin:0;">
-          For privacy questions, contact:
-          <strong><a href="mailto:support@tabulous.tools">support@tabulous.tools</a></strong>
-        </p>
-      </div>
-
-      <p class="last-updated">
-        Last updated: <span id="d"></span>
-      </p>
-    </section>
-
-    <footer class="footer">
-      <div>© Tabulous</div>
-      <div>
-        <a href="./privacy.html">Privacy</a> ·
-        <a href="./support.html">Support</a>
-      </div>
-    </footer>
-
-  </div>
-
-  <script>
-    document.getElementById("d").textContent = new Date().toISOString().slice(0,10);
-  </script>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<a class="brand" href="index.html">
+<img src="assets/tabulous-mark.svg" width="36" height="36" alt="">Tabulous<span class="version">2.0.1</span>
+</a>
+<nav aria-label="Main navigation">
+<a href="index.html#features">Features</a>
+<a href="pricing.html">Pricing</a>
+<a href="support.html">Support</a>
+<a class="nav-account" href="account.html">My account ↗</a>
+</nav>
+</header>
+<main id="main">
+<section class="page-head">
+<p class="eyebrow">YOUR DATA STAYS YOURS</p>
+<h1>Privacy, in plain language.</h1>
+<p class="lead">Local by default. Optional cloud features are separate choices.</p>
+<p>Last updated: 25 October 2026</p>
+</section>
+<article class="prose">
+<h2>Local Workspaces and recovery</h2>
+<p>Tabulous stores Workspace names, saved URLs and titles, Groups, order, settings, and local recovery information in your Chrome profile. Core local features do not require an account. Browser permissions allow Tabulous to manage tabs and windows, save Workspaces and offer local recovery. Exported backups may contain private URLs: store and share them carefully.</p>
+<h2>Optional accounts</h2>
+<p>Email sign-in uses Supabase authentication. The service processes your email address, account identifier and authentication records. This website keeps its signed-in session in memory; closing or reloading the page may require signing in again. Creating an account does not purchase Pro or consent to uploading your local library.</p>
+<h2>Optional cloud sync</h2>
+<p>When you explicitly enable cloud sync in a supported version, your saved Workspace library—including saved URLs, titles, Groups and ordering—is sent to the configured Supabase service to provide synchronisation and cloud backup. The production service is configured in London. Local recovery snapshots are not a separate cloud version-history service. Service providers may process authentication and operational information under their own terms.</p>
+<h2>Payments</h2>
+<p>Stripe processes payment details on its hosted checkout and billing pages. Tabulous receives customer and transaction identifiers, payment/subscription status and entitlement information. Card details are handled by Stripe. Public purchasing is not currently open; actual availability is enforced by the billing service. Visiting a return URL does not grant paid access.</p>
+<h2>This website</h2>
+<p>The website is hosted with GitHub Pages. Hosting and service providers may receive IP addresses, browser details and request/security logs when you access their services. This website does not embed advertising trackers or third-party analytics. Font and image assets are served with the site.</p>
+<h2>Data retention and deletion</h2>
+<p>Local data remains in your Chrome profile until you remove it or browser storage is cleared. Export a backup before uninstalling. To request deletion of account and synchronised data, follow the <a href="delete-account.html">account deletion instructions</a>. Authentication is required before we act. Billing records may need to be retained for legal, accounting, refund or dispute purposes. We do not promise immediate deletion from provider backups or a fixed retention period that has not been verified.</p>
+<h2>Your choices and contact</h2>
+<p>You can use local features without an account, choose whether to enable sync, and contact <a href="mailto:support@tabulous.tools">support@tabulous.tools</a> about access, correction or deletion. Where applicable, you may also have rights under your local data protection law.</p>
+</article>
+</main>
+<footer>
+<a class="brand" href="index.html">
+<img src="assets/tabulous-mark.svg" width="28" height="28" alt="">Tabulous</a>
+<p>A little less browser chaos. A lot more headspace.</p>
+<div>
+<a href="pricing.html">Pricing</a>
+<a href="support.html">Support</a>
+<a href="privacy.html">Privacy</a>
+<a href="terms.html">Terms</a>
+<a href="delete-account.html">Delete account</a>
+</div>
+<small>© 2026 Tabulous</small>
+</footer>
 </body>
 </html>

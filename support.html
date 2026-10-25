@@ -1,303 +1,63 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tabulous Support</title>
-
-  <style>
-    :root{
-      --bg1:#111a3d;
-      --bg2:#2d1b69;
-      --bg3:#3b247d;
-      --text:#f4f6ff;
-      --muted:#d6dcff;
-      --line:rgba(255,255,255,.18);
-      --line-strong:rgba(255,255,255,.28);
-      --shadow:0 16px 40px rgba(0,0,0,.28);
-      --radius:18px;
-      --max:1120px;
-      --gold:#d4a017;
-      --gold-bg:rgba(212,160,23,.08);
-      --card:rgba(255,255,255,.08);
-      --nav-text:#1f2442;
-      --nav-pill-bg:#ffffff;
-      --nav-pill-border:rgba(20,24,45,.12);
-    }
-
-    *{box-sizing:border-box}
-
-    body{
-      margin:0;
-      font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      color:var(--text);
-      background:
-        radial-gradient(circle at top left, rgba(125,162,255,.22), transparent 30%),
-        radial-gradient(circle at top right, rgba(159,124,255,.18), transparent 28%),
-        linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 55%, var(--bg3) 100%);
-      min-height:100vh;
-    }
-
-    a{color:inherit;text-decoration:none}
-
-    .wrap{
-      max-width:var(--max);
-      margin:0 auto;
-      padding:28px 18px 64px;
-    }
-
-    .topbar-wrap{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      flex-wrap:wrap;
-    }
-
-    .brand-pill{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:14px 20px;
-      border-radius:999px;
-      background:#ffffff;
-      border:1px solid rgba(20,24,45,.08);
-      box-shadow:var(--shadow);
-      flex:0 0 auto;
-    }
-
-    .brand-pill img{
-      height:54px;
-      width:auto;
-      display:block;
-    }
-
-    .topbar{
-      display:flex;
-      align-items:center;
-      justify-content:flex-end;
-      gap:14px;
-      padding:16px 18px;
-      background:rgba(255,255,255,.11);
-      border:1px solid var(--line);
-      border-radius:999px;
-      box-shadow:var(--shadow);
-      backdrop-filter:blur(10px);
-      flex:1 1 620px;
-      min-width:280px;
-    }
-
-    .nav{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      width:100%;
-      justify-content:flex-end;
-    }
-
-    .pill{
-      padding:11px 17px;
-      border-radius:999px;
-      border:1px solid var(--nav-pill-border);
-      background:var(--nav-pill-bg);
-      color:var(--nav-text);
-      font-weight:800;
-      font-size:14px;
-      white-space:nowrap;
-      transition:.18s ease;
-      box-shadow:0 4px 12px rgba(0,0,0,.08);
-    }
-
-    .pill:hover{
-      transform:translateY(-1px);
-      background:#f4f6ff;
-    }
-
-    .page-head{
-      margin-top:42px;
-      max-width:760px;
-    }
-
-    .eyebrow{
-      display:inline-block;
-      margin-bottom:16px;
-      padding:8px 12px;
-      border-radius:999px;
-      border:1px solid rgba(212,160,23,.35);
-      background:var(--gold-bg);
-      color:#ffe59b;
-      font-size:13px;
-      font-weight:800;
-      letter-spacing:.2px;
-    }
-
-    h1{
-      margin:0 0 14px;
-      font-size:48px;
-      line-height:1.04;
-      letter-spacing:-1px;
-    }
-
-    .lead{
-      margin:0;
-      color:var(--muted);
-      font-size:18px;
-      line-height:1.7;
-      max-width:760px;
-    }
-
-    .section{
-      margin-top:34px;
-      max-width:860px;
-    }
-
-    .section h2{
-      margin:0 0 10px;
-      font-size:24px;
-      letter-spacing:-.3px;
-    }
-
-    .section p,
-    .section li{
-      color:var(--muted);
-      line-height:1.75;
-      font-size:16px;
-    }
-
-    .section ul{
-      margin:10px 0 0;
-      padding-left:18px;
-    }
-
-    .info-card{
-      margin-top:18px;
-      padding:22px;
-      border-radius:18px;
-      border:1px solid var(--line);
-      background:var(--card);
-      box-shadow:var(--shadow);
-      backdrop-filter:blur(8px);
-    }
-
-    .info-card h3{
-      margin:0 0 10px;
-      font-size:18px;
-    }
-
-    .footer{
-      margin-top:64px;
-      padding-top:18px;
-      border-top:1px solid rgba(255,255,255,.12);
-      display:flex;
-      justify-content:space-between;
-      gap:16px;
-      flex-wrap:wrap;
-      color:rgba(255,255,255,.68);
-      font-size:13px;
-    }
-
-    @media (max-width:900px){
-      h1{font-size:40px}
-    }
-
-    @media (max-width:680px){
-      .topbar-wrap{
-        flex-direction:column;
-        align-items:stretch;
-      }
-
-      .brand-pill{
-        align-self:flex-start;
-      }
-
-      .topbar{
-        border-radius:24px;
-      }
-
-      .nav{
-        justify-content:center;
-      }
-
-      .pill{
-        text-align:center;
-      }
-
-      .footer{
-        flex-direction:column;
-      }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Get help with Tabulous Workspaces, recovery, accounts and billing.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src https://hgdolsgkvyxivlhwimsr.supabase.co; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta name="theme-color" content="#f7f8fc">
+<title>Support — Tabulous</title>
+<link rel="canonical" href="https://tabulous.tools/support.html">
+<link rel="icon" type="image/svg+xml" href="assets/tabulous-mark.svg">
+<link rel="stylesheet" href="site.css">
 </head>
-
 <body>
-  <div class="wrap">
-
-    <div class="topbar-wrap">
-      <div class="brand-pill">
-        <img src="./tabulous-wordmark.png" alt="Tabulous" />
-      </div>
-
-      <header class="topbar">
-        <nav class="nav">
-          <a class="pill" href="./index.html">Home</a>
-          <a class="pill" href="./support.html">Support</a>
-          <a class="pill" href="./privacy.html">Privacy</a>
-        </nav>
-      </header>
-    </div>
-
-    <section class="page-head">
-      <div class="eyebrow">Help and contact</div>
-      <h1>Support</h1>
-      <p class="lead">
-        Need help with Tabulous? This is the quickest place to get support information, report an issue, or ask a question.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>What Tabulous does</h2>
-      <p>
-        Tabulous helps you organize browser tabs into named workspaces, restore them quickly, and recover recent browser sessions with Crash Vault.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Common support topics</h2>
-      <ul>
-        <li>Workspace save and restore issues</li>
-        <li>Crash Vault recovery questions</li>
-        <li>Backup and restore help</li>
-        <li>Permissions and privacy questions</li>
-        <li>Bug reports and feature suggestions</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <div class="info-card">
-        <h3>Contact</h3>
-        <p>
-          Email: <strong><a href="mailto:support@tabulous.tools">support@tabulous.tools</a></strong>
-        </p>
-        <p>
-          When reporting an issue, it helps to include:
-        </p>
-        <ul>
-          <li>what you were trying to do</li>
-          <li>what happened instead</li>
-          <li>your Chrome version</li>
-          <li>whether the issue happened during normal workspace use or inside Crash Vault</li>
-        </ul>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div>© Tabulous</div>
-      <div>
-        <a href="./privacy.html">Privacy</a> ·
-        <a href="./support.html">Support</a>
-      </div>
-    </footer>
-
-  </div>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<a class="brand" href="index.html">
+<img src="assets/tabulous-mark.svg" width="36" height="36" alt="">Tabulous<span class="version">2.0.1</span>
+</a>
+<nav aria-label="Main navigation">
+<a href="index.html#features">Features</a>
+<a href="pricing.html">Pricing</a>
+<a href="support.html">Support</a>
+<a class="nav-account" href="account.html">My account ↗</a>
+</nav>
+</header>
+<main id="main">
+<section class="page-head">
+<p class="eyebrow">HERE TO HELP</p>
+<h1>Need a hand?</h1>
+<p class="lead">For questions, bug reports or account help, email <a href="mailto:support@tabulous.tools">support@tabulous.tools</a>.</p>
+</section>
+<section class="prose">
+<h2>Tell us what happened</h2>
+<p>Include your Tabulous version, Chrome version, what you tried, and what happened instead. For billing, include your account email and a receipt reference if available.</p>
+<p>Please do not send passwords, email sign-in codes, payment-card details, or a full Workspace export containing private URLs. Review diagnostics before sharing them.</p>
+<h2>Protect your Workspaces first</h2>
+<p>Export a local backup before reinstalling the extension or clearing browser data. Local Workspaces belong to the Chrome profile that holds them.</p>
+<h2>Accounts and billing</h2>
+<p>
+<a href="account.html">Sign in to your account</a> to check your verified plan or manage an existing subscription when the billing service is available. A payment redirect is not proof of paid access; payment processing can take time.</p>
+<h2>Version availability</h2>
+<p>Tabulous 2.0.1 is prepared for Chrome Web Store review. The existing public listing currently offers version 0.8. See the listing for the version available to install.</p>
+<h2>Privacy or account deletion</h2>
+<p>Read our <a href="privacy.html">privacy information</a> or <a href="delete-account.html">request account deletion</a>. We do not publish a support response-time guarantee.</p>
+</section>
+</main>
+<footer>
+<a class="brand" href="index.html">
+<img src="assets/tabulous-mark.svg" width="28" height="28" alt="">Tabulous</a>
+<p>A little less browser chaos. A lot more headspace.</p>
+<div>
+<a href="pricing.html">Pricing</a>
+<a href="support.html">Support</a>
+<a href="privacy.html">Privacy</a>
+<a href="terms.html">Terms</a>
+<a href="delete-account.html">Delete account</a>
+</div>
+<small>© 2026 Tabulous</small>
+</footer>
 </body>
 </html>

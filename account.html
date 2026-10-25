@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Sign in to your Tabulous account and check verified account and billing status.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src https://hgdolsgkvyxivlhwimsr.supabase.co; object-src 'none'; base-uri 'none'; form-action 'self'">
+<meta name="theme-color" content="#f7f8fc">
+<meta name="robots" content="noindex">
+<title>Your account — Tabulous</title>
+<link rel="canonical" href="https://tabulous.tools/account.html">
+<link rel="icon" type="image/svg+xml" href="assets/tabulous-mark.svg">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<a class="brand" href="index.html">
+<img src="assets/tabulous-mark.svg" width="36" height="36" alt="">Tabulous<span class="version">2.0.1</span>
+</a>
+<nav aria-label="Main navigation">
+<a href="index.html#features">Features</a>
+<a href="pricing.html">Pricing</a>
+<a href="support.html">Support</a>
+<a class="nav-account" href="account.html">My account ↗</a>
+</nav>
+</header>
+<main id="main">
+<section class="page-head">
+<p class="eyebrow">YOUR TABULOUS</p>
+<h1>A home for your account.</h1>
+<p class="lead">Sign in to check your plan and billing availability. Your local Workspaces do not need an account.</p>
+</section>
+<section class="account-layout">
+<div class="card">
+<h2>Sign in with email</h2>
+<p>We'll email a one-time code. Use the same email you use in Tabulous.</p>
+<form id="account-form" method="post" action="account.html">
+<label for="email">Email address</label>
+<input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+<button id="send-code">Send sign-in code</button>
+</form>
+<form id="verify-form" method="post" action="account.html" hidden>
+<label for="code">Email sign-in code</label>
+<input id="code" name="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6,10}" required>
+<button>Sign in</button>
+</form>
+<p id="account-status" class="notice" role="status" aria-live="polite">Signing in does not purchase a plan or enable sync.</p>
+<p id="account-profile">
+</p>
+<button id="sign-out" class="secondary" hidden>Sign out</button>
+</div>
+<div class="card">
+<h2>Your plan and billing</h2>
+<p id="plan-status">Sign in to load your verified account status.</p>
+<p id="purchase-status">Purchasing availability is checked with the server after sign-in.</p>
+<p id="founder-status">Founder availability is shown only after a successful authenticated server check.</p>
+<p id="selected-plan">
+</p>
+<div class="stack">
+<button id="refresh-status" disabled>Refresh account status</button>
+<button id="start-checkout" disabled>Continue with selected plan</button>
+<button id="billing-portal" disabled>Manage billing</button>
+</div>
+<p>
+<a href="pricing.html">Compare plans →</a>
+</p>
+<p class="fine">After checkout or a billing-portal return, sign in again if needed. Payment status comes from the server and verified payment events. A return link never activates Pro.</p>
+</div>
+</section>
+</main>
+<footer>
+<a class="brand" href="index.html">
+<img src="assets/tabulous-mark.svg" width="28" height="28" alt="">Tabulous</a>
+<p>A little less browser chaos. A lot more headspace.</p>
+<div>
+<a href="pricing.html">Pricing</a>
+<a href="support.html">Support</a>
+<a href="privacy.html">Privacy</a>
+<a href="terms.html">Terms</a>
+<a href="delete-account.html">Delete account</a>
+</div>
+<small>© 2026 Tabulous</small>
+</footer>
+<script src="website-config.js">
+</script>
+<script src="account.js">
+</script>
+</body>
+</html>

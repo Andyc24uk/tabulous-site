@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Tabulous</title>
+  <path fill="#38BDF8" d="M42 194a24 24 0 0 1 9-19L151 99c16-12 39-1 39 19v200a24 24 0 0 1-9 19L81 413c-16 12-39 1-39-19V194Z"/>
+  <path fill="#FFFFFF" stroke="#0F172A" stroke-width="5" stroke-linejoin="round" d="M190 166a24 24 0 0 1 9-19l100-76c16-12 39-1 39 19v228a24 24 0 0 1-9 19l-100 76c-16 12-39 1-39-19V166Z"/>
+  <path fill="#8B5CF6" d="M338 138a24 24 0 0 1 9-19l100-76c16-12 39-1 39 19v256a24 24 0 0 1-9 19l-100 76c-16 12-39 1-39-19V138Z"/>
+</svg>
