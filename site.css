@@ -1,10 +1,11 @@
 @font-face{font-family:Inter;src:url('assets/fonts/Inter-Variable.woff2') format('woff2');font-weight:100 900;font-display:swap}
+:root{--header-bottom-space:18px;--page-start-space:30px;--page-content-gap:24px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:24px}
 body{margin:0;background:#f7f8fc;color:#101936;font-family:Inter,system-ui,sans-serif;font-size:16px;line-height:1.7}
 a{color:#5546e8;text-underline-offset:4px}
 header,main,footer{max-width:1240px;margin:auto;padding-left:36px;padding-right:36px}
-header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:28px;padding-bottom:28px}
+header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:28px;padding-bottom:var(--header-bottom-space)}
 .brand{display:inline-flex;align-items:center;gap:10px;font-size:25px;font-weight:780;letter-spacing:-1px;color:#0f172a;text-decoration:none}
 .version{font-size:11px;background:#eceafb;padding:3px 8px;color:#6553bd;letter-spacing:0;border-radius:7px}
 nav{display:flex;gap:28px;align-items:center}
@@ -51,7 +52,9 @@ footer .brand{font-size:22px}
 footer p,footer small{font-size:12px;margin:12px 0;color:#647089}
 footer div{display:flex;flex-wrap:wrap;gap:22px;margin:25px 0}
 footer a{font-size:12px;text-decoration:none;color:#526079}
-.page-head{padding:65px 0 40px;max-width:850px}
+.page-head{padding:var(--page-start-space) 0 var(--page-content-gap);max-width:850px}
+.page-head>:last-child{margin-bottom:0}
+.page-head+.prose{padding-top:0}
 .page-head h1{font-size:clamp(38px,4.5vw,58px)}
 .centered{text-align:center;margin:auto}
 .centered .lead{margin-left:auto;margin-right:auto}
@@ -65,6 +68,7 @@ footer a{font-size:12px;text-decoration:none;color:#526079}
 .recommended{border:2px solid #8f80fb;background:#fbfaff}
 .prose{max-width:780px;padding:35px 0 75px}
 .prose h2{font-size:25px;letter-spacing:-.7px;margin-top:32px;margin-bottom:16px}
+.prose>:first-child{margin-top:0}
 .prose p,.prose li{font-size:15px;color:#526079}
 .account-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding-bottom:80px}
 .account-layout h2{font-size:25px;letter-spacing:-.8px}
@@ -77,7 +81,8 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #b5a7
 .skip{position:absolute;left:20px;top:-80px;padding:10px;background:white;z-index:20}
 .skip:focus{top:10px}
 [hidden]{display:none!important}
-@media(max-width:900px){header{flex-wrap:wrap}
+@media(max-width:900px){:root{--page-start-space:26px}
+header{flex-wrap:wrap}
 .hero{grid-template-columns:1fr;padding-top:40px;gap:65px}
 .hero>div:first-child{max-width:650px}
 .hero-art{max-width:720px}
@@ -87,7 +92,8 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #b5a7
 .split{gap:30px}
 .split h2{font-size:32px}
 }
-@media(max-width:600px){header,main,footer{padding-left:22px;padding-right:22px}
+@media(max-width:600px){:root{--page-start-space:22px}
+header,main,footer{padding-left:22px;padding-right:22px}
 header{gap:20px;padding-top:22px}
 nav{gap:18px;flex-wrap:wrap}
 nav a{font-size:12px}
@@ -103,7 +109,6 @@ nav a{font-size:12px}
 .split{margin-top:20px;gap:35px}
 .closing{margin-top:35px;padding:40px 20px}
 .closing h2{font-size:36px}
-.page-head{padding-top:35px}
 .page-head h1{font-size:40px}
 .pricing-grid .card{padding:26px}
 .prose{padding-bottom:50px}
@@ -112,9 +117,8 @@ nav a{font-size:12px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
 }
 
-/* Homepage polish: retain the shared visual system and other page layouts. */
-.homepage header{padding-bottom:18px}
-.homepage .hero{padding:30px 0 42px}
+/* Homepage polish: page entry spacing shares the approved homepage values. */
+.homepage .hero{padding:var(--page-start-space) 0 42px}
 .homepage .lead{line-height:1.7}
 .homepage .actions{margin:24px 0 16px;gap:18px}
 .homepage .pills{margin-top:20px;gap:8px 16px;font-size:12px}
@@ -139,11 +143,11 @@ nav a{font-size:12px}
 .homepage .split{gap:32px}
 }
 @media(max-width:900px){
-.homepage .hero{padding-top:26px;gap:42px}
+.homepage .hero{gap:42px}
 .homepage .split{grid-template-columns:1fr 1fr;gap:28px}
 }
 @media(max-width:600px){
-.homepage .hero{padding-top:22px;padding-bottom:28px;gap:40px}
+.homepage .hero{padding-bottom:28px;gap:40px}
 .homepage .hero h1{font-size:clamp(36px,10vw,45px)}
 .homepage .section{padding:30px 0}
 .homepage .split{grid-template-columns:1fr;gap:28px}
