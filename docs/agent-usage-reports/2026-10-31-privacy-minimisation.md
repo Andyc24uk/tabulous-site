@@ -1,0 +1,7 @@
+# Agent Usage & Division of Labour — privacy minimisation, 31 October 2026
+
+Root inspected location handling, provider controls, Google policies and existing production evidence; updated only privacy policy copy and verified its rendering/deployment. No subagents were used; zero delegated tasks. Estimated work share: root 100%.
+
+Root model family and reasoning effort: **Not available in telemetry.** The owner requested GPT-6.1 Sol Medium; this report does not assert a runtime selection that is not exposed. Task tokens, cost, account allowance/reset impact: **Not available in telemetry.** No reset credit was used and no model selection was changed for reporting.
+
+Retries/inefficiencies: an overbroad initial tool discovery and documentation output were truncated; one Supabase docs search returned no results; a guessed Google user-data URL returned 404 (recovered using official FAQ links); external search results were irrelevant and excluded; an in-app provider page required login, so existing authenticated provider UI was inspected read-only; browser naming initially used an unavailable binding and a selector differed in letter case, both corrected from documentation/fresh DOM; subsequent browser state changed and no further interactions were attempted. Headless Chrome could not start in the sandbox; one reviewed escalation ran the guarded disposable-profile render check successfully. No security records, personal account data, publisher form, production gates or extension code were modified.

@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "label": "desktop",
+      "path": "/privacy.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "mobile",
+      "path": "/privacy.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    }
+  ]
+}
