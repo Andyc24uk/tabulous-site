@@ -1,0 +1,11 @@
+{
+  "checkedOn": "2026-10-31",
+  "readOnly": true,
+  "syncEnabled": true,
+  "paymentsEnabled": true,
+  "founderCapacity": 100,
+  "founderSold": 0,
+  "founderUnreservedAtCheck": 100,
+  "remainingCountPublishedStatically": false,
+  "liveCheckoutAttempted": false
+}

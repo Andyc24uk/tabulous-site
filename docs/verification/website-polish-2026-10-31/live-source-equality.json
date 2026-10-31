@@ -1,0 +1,103 @@
+{
+  "verifiedAt": "2026-10-31T12:33:49.448Z",
+  "url": "https://tabulous.tools/",
+  "deploymentCommit": "9a95f9db2235be187cd018a62d7c32812c6d9156",
+  "checks": [
+    {
+      "file": "404.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "f99f8221089fae163175e74a90490b50a265e06803cb8c69ffcdd9546acb5fa0"
+    },
+    {
+      "file": "account.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "b2aa8514ee17537f52a064b4aabf52448e0964fc61260a08964f7e685b1d9920"
+    },
+    {
+      "file": "checkout-cancel.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "ed0a9eaefc67964e87328f16dd3426bca6b577b5a2c2873bb5a720c030ae5380"
+    },
+    {
+      "file": "checkout-success.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "093e1ff09f24e96d273e3415c3b763a4e674ceb6305904327de8ece8833d6113"
+    },
+    {
+      "file": "delete-account.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "24019217d00b433523d51b4c0422c71656d92d66c5831efbb5f4422761742314"
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "eaa2ee9b92c5d4ba70d306cd066f64689eae702c22435345ad9714ea02ab4f54"
+    },
+    {
+      "file": "portal-return.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "02674da7b1b328aacd9272fa3f75a30cbe712d404ac84722ffc65cfdc956a6f5"
+    },
+    {
+      "file": "pricing.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "94a457560b9786ae5b4bd908c0cc7da1e06f632b53f773e374f2ba4f27c19cc5"
+    },
+    {
+      "file": "privacy.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "688c290327837fb5af8e9152fcfd2849d44f79e18346b6ff8e789b0def8f6c66"
+    },
+    {
+      "file": "support.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "39a875e19840af6038cacea121c2ca1004702c8bf90537861c62bc8d80e7e06a"
+    },
+    {
+      "file": "terms.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "8062bfb539275bfe05e3e63fd63e804bea0e0b04a98452c48c71ec57e663efb6"
+    },
+    {
+      "file": "site.css",
+      "status": 200,
+      "equal": true,
+      "sha256": "b50ae50b0a94de892d49481a7525b231260e996987b00910c8aa876d7c9e273a"
+    },
+    {
+      "file": "account.js",
+      "status": 200,
+      "equal": true,
+      "sha256": "cdedc0584c0e4a86550f0d42cb7ddfbf7de7175fc7996aba2ed3b98167d35615"
+    },
+    {
+      "file": "website-config.js",
+      "status": 200,
+      "equal": true,
+      "sha256": "0a8e176ed31d446519c6d4585ce57a4dd4d6239f65d79cfbcaf22701a5f15b21"
+    },
+    {
+      "file": "pricing-config.js",
+      "status": 200,
+      "equal": true,
+      "sha256": "80792f97716aab92dcb046460214a3fc3c6a5e8f51b8bda67abf866194252267"
+    },
+    {
+      "file": "sitemap.xml",
+      "status": 200,
+      "equal": true,
+      "sha256": "1af0c171e591e6995a48ca9b2f86421e5dfe125fe1239e897848e972f6f90afb"
+    }
+  ]
+}
