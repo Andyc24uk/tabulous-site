@@ -1,0 +1,121 @@
+{
+  "result": "PASS",
+  "deploymentCommit": "2ce7e4608952a0673ef806b2e101742062ff0126",
+  "checkedDateKST": "2026-10-31",
+  "checks": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "067eb34fc5459380026621a22013ac11ae6e1eff49a83855259790341d1d6c6a"
+    },
+    {
+      "path": "pricing.html",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "46e270d8e2dad3f7c0a432a68fef234df1ebdb738b6ed36ffd63d46bb501849d"
+    },
+    {
+      "path": "account.html",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "b2aa8514ee17537f52a064b4aabf52448e0964fc61260a08964f7e685b1d9920"
+    },
+    {
+      "path": "support.html",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "18147953e36f5a845819cf9972097599bd241d9adc8c23c8536f10786096f86d"
+    },
+    {
+      "path": "privacy.html",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "bc43aeb8d9260ead3f6838f7fe825c23e19df9bc47474b01c645821ddafdd229"
+    },
+    {
+      "path": "terms.html",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "5ed94686db155cd5dd373f50a2219820ff32dadb941cc51c8ec2a50a9af6e725"
+    },
+    {
+      "path": "delete-account.html",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "24019217d00b433523d51b4c0422c71656d92d66c5831efbb5f4422761742314"
+    },
+    {
+      "path": "checkout-success.html",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "093e1ff09f24e96d273e3415c3b763a4e674ceb6305904327de8ece8833d6113"
+    },
+    {
+      "path": "checkout-cancel.html",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "74d3e4ee6a0cdf2ebb2cee73fe8b3664c90ad85f6e761328c874b080345cb82f"
+    },
+    {
+      "path": "portal-return.html",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "02674da7b1b328aacd9272fa3f75a30cbe712d404ac84722ffc65cfdc956a6f5"
+    },
+    {
+      "path": "site.css",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "0b0bea8ffe65b28590ff2da707eb24e73ecf9f2c1eff09dfb0719f02b2d7ed6f"
+    },
+    {
+      "path": "account.js",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "cdedc0584c0e4a86550f0d42cb7ddfbf7de7175fc7996aba2ed3b98167d35615"
+    },
+    {
+      "path": "assets/tabulous-mark.svg",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "5c000ca863791ba242c9d856e81f6c80c9874f786dd2ec647df66ca39f1693b9"
+    },
+    {
+      "path": "assets/dashboard-demo.png",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "51b99f7b465ade9bdb71a8bdb22a48da432d3f14102949c1566b67b7271edad7"
+    },
+    {
+      "path": "assets/workspace-demo.png",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "432dc6bfb437a008d93d2c3616ec0cb8aa4102f980765f8b1f2eca4f20148d85"
+    },
+    {
+      "path": "assets/founder-crown.svg",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "0a8744613f762eb93f032891690625299d00cb4a9319da475bca47169b639436"
+    },
+    {
+      "path": "assets/social-preview.png",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "18a678a8704702a30a55bfd9ca195ddc29959b316327824b4e54a2eee2f3a48e"
+    },
+    {
+      "path": "assets/fonts/Inter-Variable.woff2",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3"
+    },
+    {
+      "path": "website-config.js",
+      "status": 200,
+      "sourceMatch": true,
+      "sha256": "0a8e176ed31d446519c6d4585ce57a4dd4d6239f65d79cfbcaf22701a5f15b21"
+    }
+  ]
+}
