@@ -9,6 +9,14 @@
 <meta name="theme-color" content="#f7f8fc">
 <meta name="robots" content="noindex">
 <title>Your account — Tabulous</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Your account — Tabulous">
+<meta property="og:description" content="Sign in to your Tabulous account and check verified account and billing status.">
+<meta property="og:image" content="https://tabulous.tools/assets/social-preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="canonical" href="https://tabulous.tools/account.html">
 <link rel="icon" type="image/svg+xml" href="assets/tabulous-mark.svg">
 <link rel="stylesheet" href="site.css">
@@ -30,7 +38,7 @@
 <section class="page-head">
 <p class="eyebrow">YOUR TABULOUS</p>
 <h1>A home for your account.</h1>
-<p class="lead">Sign in to check your plan and billing availability. Your local Workspaces do not need an account.</p>
+<p class="lead">Sign in to see your plan, choose Pro or manage billing. Your local Workspaces do not need an account.</p>
 </section>
 <section class="account-layout">
 <div class="card">
@@ -46,16 +54,16 @@
 <input id="code" name="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6,10}" required>
 <button>Sign in</button>
 </form>
-<p id="account-status" class="notice" role="status" aria-live="polite">Signing in does not purchase a plan or enable sync.</p>
+<p id="account-status" class="notice" role="status" aria-live="polite">Use your Tabulous email to manage your account.</p>
 <p id="account-profile">
 </p>
 <button id="sign-out" class="secondary" hidden>Sign out</button>
 </div>
 <div class="card">
 <h2>Your plan and billing</h2>
-<p id="plan-status">Sign in to load your verified account status.</p>
-<p id="purchase-status">Purchasing availability is checked with the server after sign-in.</p>
-<p id="founder-status">Founder availability is shown only after a successful authenticated server check.</p>
+<p id="plan-status">Sign in to see your current plan.</p>
+<p id="purchase-status">Choose a Pro plan after signing in.</p>
+<p id="founder-status">Sign in to check Founder availability.</p>
 <p id="selected-plan">
 </p>
 <div class="stack">
@@ -66,7 +74,7 @@
 <p>
 <a href="pricing.html">Compare plans →</a>
 </p>
-<p class="fine">After checkout or a billing-portal return, sign in again if needed. Payment status comes from the server and verified payment events. A return link never activates Pro.</p>
+<p class="fine">After checkout, sign in again if needed to see your current plan. Payment processing can take a moment.</p>
 </div>
 </section>
 </main>

@@ -1,0 +1,138 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "label": "desktop",
+      "path": "/index.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "desktop",
+      "path": "/pricing.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "desktop",
+      "path": "/account.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "desktop",
+      "path": "/support.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "desktop",
+      "path": "/privacy.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "desktop",
+      "path": "/terms.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "desktop",
+      "path": "/delete-account.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "desktop",
+      "path": "/checkout-success.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "desktop",
+      "path": "/checkout-cancel.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "desktop",
+      "path": "/portal-return.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "mobile",
+      "path": "/index.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "mobile",
+      "path": "/pricing.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "mobile",
+      "path": "/account.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "mobile",
+      "path": "/support.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "mobile",
+      "path": "/privacy.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "mobile",
+      "path": "/terms.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "mobile",
+      "path": "/delete-account.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "mobile",
+      "path": "/checkout-success.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "mobile",
+      "path": "/checkout-cancel.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "label": "mobile",
+      "path": "/portal-return.html",
+      "noOverflow": true,
+      "imagesLoaded": true
+    },
+    {
+      "syntheticAuth": true,
+      "gateFailClosed": true,
+      "complimentaryGrant": true,
+      "founderFromServer": true,
+      "serverCheckoutRejection": true,
+      "signoutClearsState": true,
+      "returnUrlCannotGrant": true
+    }
+  ],
+  "evidence": "/var/folders/kt/7j1mtxts6532nrz3fzwjkk4w0000gn/T/tabulous-native-website-0T9YBp",
+  "headless": true,
+  "personalBrowserTouched": false,
+  "realPaymentsAttempted": false
+}

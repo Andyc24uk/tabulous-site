@@ -8,6 +8,14 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src https://hgdolsgkvyxivlhwimsr.supabase.co; object-src 'none'; base-uri 'none'; form-action 'self'">
 <meta name="theme-color" content="#f7f8fc">
 <title>Privacy — Tabulous</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy — Tabulous">
+<meta property="og:description" content="How Tabulous handles local Workspaces, optional accounts, cloud sync and billing.">
+<meta property="og:image" content="https://tabulous.tools/assets/social-preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="canonical" href="https://tabulous.tools/privacy.html">
 <link rel="icon" type="image/svg+xml" href="assets/tabulous-mark.svg">
 <link rel="stylesheet" href="site.css">
@@ -30,17 +38,17 @@
 <p class="eyebrow">YOUR DATA STAYS YOURS</p>
 <h1>Privacy, in plain language.</h1>
 <p class="lead">Local by default. Optional cloud features are separate choices.</p>
-<p>Last updated: 25 October 2026</p>
+<p>Last updated: 31 October 2026</p>
 </section>
 <article class="prose">
 <h2>Local Workspaces and recovery</h2>
 <p>Tabulous stores Workspace names, saved URLs and titles, Groups, order, settings, and local recovery information in your Chrome profile. Core local features do not require an account. Browser permissions allow Tabulous to manage tabs and windows, save Workspaces and offer local recovery. Exported backups may contain private URLs: store and share them carefully.</p>
 <h2>Optional accounts</h2>
-<p>Email sign-in uses Supabase authentication. The service processes your email address, account identifier and authentication records. This website keeps its signed-in session in memory; closing or reloading the page may require signing in again. Creating an account does not purchase Pro or consent to uploading your local library.</p>
+<p>Email sign-in uses Supabase authentication and its configured email delivery service. The service processes your email address, account identifier and authentication records. This website keeps its signed-in session in memory; closing or reloading the page may require signing in again. Creating an account does not purchase Pro or consent to uploading your local library.</p>
 <h2>Optional cloud sync</h2>
 <p>When you explicitly enable cloud sync in a supported version, your saved Workspace library—including saved URLs, titles, Groups and ordering—is sent to the configured Supabase service to provide synchronisation and cloud backup. The production service is configured in London. Local recovery snapshots are not a separate cloud version-history service. Service providers may process authentication and operational information under their own terms.</p>
 <h2>Payments</h2>
-<p>Stripe processes payment details on its hosted checkout and billing pages. Tabulous receives customer and transaction identifiers, payment/subscription status and entitlement information. Card details are handled by Stripe. Public purchasing is not currently open; actual availability is enforced by the billing service. Visiting a return URL does not grant paid access.</p>
+<p>Stripe processes payment details on its hosted checkout and billing pages. Tabulous receives customer and transaction identifiers, payment/subscription status and entitlement information. Card details are handled by Stripe. Purchases and subscription management use hosted Stripe pages. Your account shows your confirmed plan after payment.</p>
 <h2>This website</h2>
 <p>The website is hosted with GitHub Pages. Hosting and service providers may receive IP addresses, browser details and request/security logs when you access their services. This website does not embed advertising trackers or third-party analytics. Font and image assets are served with the site.</p>
 <h2>Data retention and deletion</h2>

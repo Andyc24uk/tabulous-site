@@ -1,0 +1,474 @@
+{
+  "phase": "after",
+  "result": "PASS",
+  "checks": [
+    {
+      "label": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "viewport": 1440,
+      "images": [
+        {
+          "src": "assets/tabulous-mark.svg",
+          "ok": true
+        },
+        {
+          "src": "assets/dashboard-demo.png",
+          "ok": true
+        },
+        {
+          "src": "assets/workspace-demo.png",
+          "ok": true
+        },
+        {
+          "src": "assets/tabulous-mark.svg",
+          "ok": true
+        }
+      ],
+      "heroBottom": 659.359375,
+      "benefitsTop": 659.359375,
+      "footerVersion": "v2.0.1",
+      "links": [
+        {
+          "text": "Skip to content",
+          "href": "#main"
+        },
+        {
+          "text": "Tabulous",
+          "href": "index.html"
+        },
+        {
+          "text": "Features",
+          "href": "index.html#features"
+        },
+        {
+          "text": "Pricing",
+          "href": "pricing.html"
+        },
+        {
+          "text": "Support",
+          "href": "support.html"
+        },
+        {
+          "text": "My account ↗",
+          "href": "account.html"
+        },
+        {
+          "text": "View on Chrome Web Store ↗",
+          "href": "https://chromewebstore.google.com/detail/tabulous/iljkidmanamoojdglpbpilnepdpcaiij"
+        },
+        {
+          "text": "Discover Tabulous",
+          "href": "#features"
+        },
+        {
+          "text": "Explore Pro plans →",
+          "href": "pricing.html"
+        },
+        {
+          "text": "View on Chrome Web Store ↗",
+          "href": "https://chromewebstore.google.com/detail/tabulous/iljkidmanamoojdglpbpilnepdpcaiij"
+        },
+        {
+          "text": "Tabulous",
+          "href": "index.html"
+        },
+        {
+          "text": "Pricing",
+          "href": "pricing.html"
+        },
+        {
+          "text": "Support",
+          "href": "support.html"
+        },
+        {
+          "text": "Privacy",
+          "href": "privacy.html"
+        },
+        {
+          "text": "Terms",
+          "href": "terms.html"
+        },
+        {
+          "text": "Delete account",
+          "href": "delete-account.html"
+        }
+      ]
+    },
+    {
+      "label": "laptop",
+      "width": 1366,
+      "height": 768,
+      "viewport": 1366,
+      "images": [
+        {
+          "src": "assets/tabulous-mark.svg",
+          "ok": true
+        },
+        {
+          "src": "assets/dashboard-demo.png",
+          "ok": true
+        },
+        {
+          "src": "assets/workspace-demo.png",
+          "ok": true
+        },
+        {
+          "src": "assets/tabulous-mark.svg",
+          "ok": true
+        }
+      ],
+      "heroBottom": 651.0625,
+      "benefitsTop": 651.0625,
+      "footerVersion": "v2.0.1",
+      "links": [
+        {
+          "text": "Skip to content",
+          "href": "#main"
+        },
+        {
+          "text": "Tabulous",
+          "href": "index.html"
+        },
+        {
+          "text": "Features",
+          "href": "index.html#features"
+        },
+        {
+          "text": "Pricing",
+          "href": "pricing.html"
+        },
+        {
+          "text": "Support",
+          "href": "support.html"
+        },
+        {
+          "text": "My account ↗",
+          "href": "account.html"
+        },
+        {
+          "text": "View on Chrome Web Store ↗",
+          "href": "https://chromewebstore.google.com/detail/tabulous/iljkidmanamoojdglpbpilnepdpcaiij"
+        },
+        {
+          "text": "Discover Tabulous",
+          "href": "#features"
+        },
+        {
+          "text": "Explore Pro plans →",
+          "href": "pricing.html"
+        },
+        {
+          "text": "View on Chrome Web Store ↗",
+          "href": "https://chromewebstore.google.com/detail/tabulous/iljkidmanamoojdglpbpilnepdpcaiij"
+        },
+        {
+          "text": "Tabulous",
+          "href": "index.html"
+        },
+        {
+          "text": "Pricing",
+          "href": "pricing.html"
+        },
+        {
+          "text": "Support",
+          "href": "support.html"
+        },
+        {
+          "text": "Privacy",
+          "href": "privacy.html"
+        },
+        {
+          "text": "Terms",
+          "href": "terms.html"
+        },
+        {
+          "text": "Delete account",
+          "href": "delete-account.html"
+        }
+      ]
+    },
+    {
+      "label": "tablet",
+      "width": 820,
+      "height": 1180,
+      "viewport": 820,
+      "images": [
+        {
+          "src": "assets/tabulous-mark.svg",
+          "ok": true
+        },
+        {
+          "src": "assets/dashboard-demo.png",
+          "ok": true
+        },
+        {
+          "src": "assets/workspace-demo.png",
+          "ok": true
+        },
+        {
+          "src": "assets/tabulous-mark.svg",
+          "ok": true
+        }
+      ],
+      "heroBottom": 1115.625,
+      "benefitsTop": 1115.625,
+      "footerVersion": "v2.0.1",
+      "links": [
+        {
+          "text": "Skip to content",
+          "href": "#main"
+        },
+        {
+          "text": "Tabulous",
+          "href": "index.html"
+        },
+        {
+          "text": "Features",
+          "href": "index.html#features"
+        },
+        {
+          "text": "Pricing",
+          "href": "pricing.html"
+        },
+        {
+          "text": "Support",
+          "href": "support.html"
+        },
+        {
+          "text": "My account ↗",
+          "href": "account.html"
+        },
+        {
+          "text": "View on Chrome Web Store ↗",
+          "href": "https://chromewebstore.google.com/detail/tabulous/iljkidmanamoojdglpbpilnepdpcaiij"
+        },
+        {
+          "text": "Discover Tabulous",
+          "href": "#features"
+        },
+        {
+          "text": "Explore Pro plans →",
+          "href": "pricing.html"
+        },
+        {
+          "text": "View on Chrome Web Store ↗",
+          "href": "https://chromewebstore.google.com/detail/tabulous/iljkidmanamoojdglpbpilnepdpcaiij"
+        },
+        {
+          "text": "Tabulous",
+          "href": "index.html"
+        },
+        {
+          "text": "Pricing",
+          "href": "pricing.html"
+        },
+        {
+          "text": "Support",
+          "href": "support.html"
+        },
+        {
+          "text": "Privacy",
+          "href": "privacy.html"
+        },
+        {
+          "text": "Terms",
+          "href": "terms.html"
+        },
+        {
+          "text": "Delete account",
+          "href": "delete-account.html"
+        }
+      ]
+    },
+    {
+      "label": "mobile",
+      "width": 390,
+      "height": 844,
+      "viewport": 390,
+      "images": [
+        {
+          "src": "assets/tabulous-mark.svg",
+          "ok": true
+        },
+        {
+          "src": "assets/dashboard-demo.png",
+          "ok": true
+        },
+        {
+          "src": "assets/workspace-demo.png",
+          "ok": true
+        },
+        {
+          "src": "assets/tabulous-mark.svg",
+          "ok": true
+        }
+      ],
+      "heroBottom": 1004.875,
+      "benefitsTop": 1004.875,
+      "footerVersion": "v2.0.1",
+      "links": [
+        {
+          "text": "Skip to content",
+          "href": "#main"
+        },
+        {
+          "text": "Tabulous",
+          "href": "index.html"
+        },
+        {
+          "text": "Features",
+          "href": "index.html#features"
+        },
+        {
+          "text": "Pricing",
+          "href": "pricing.html"
+        },
+        {
+          "text": "Support",
+          "href": "support.html"
+        },
+        {
+          "text": "My account ↗",
+          "href": "account.html"
+        },
+        {
+          "text": "View on Chrome Web Store ↗",
+          "href": "https://chromewebstore.google.com/detail/tabulous/iljkidmanamoojdglpbpilnepdpcaiij"
+        },
+        {
+          "text": "Discover Tabulous",
+          "href": "#features"
+        },
+        {
+          "text": "Explore Pro plans →",
+          "href": "pricing.html"
+        },
+        {
+          "text": "View on Chrome Web Store ↗",
+          "href": "https://chromewebstore.google.com/detail/tabulous/iljkidmanamoojdglpbpilnepdpcaiij"
+        },
+        {
+          "text": "Tabulous",
+          "href": "index.html"
+        },
+        {
+          "text": "Pricing",
+          "href": "pricing.html"
+        },
+        {
+          "text": "Support",
+          "href": "support.html"
+        },
+        {
+          "text": "Privacy",
+          "href": "privacy.html"
+        },
+        {
+          "text": "Terms",
+          "href": "terms.html"
+        },
+        {
+          "text": "Delete account",
+          "href": "delete-account.html"
+        }
+      ]
+    },
+    {
+      "label": "small-mobile",
+      "width": 320,
+      "height": 740,
+      "viewport": 320,
+      "images": [
+        {
+          "src": "assets/tabulous-mark.svg",
+          "ok": true
+        },
+        {
+          "src": "assets/dashboard-demo.png",
+          "ok": true
+        },
+        {
+          "src": "assets/workspace-demo.png",
+          "ok": true
+        },
+        {
+          "src": "assets/tabulous-mark.svg",
+          "ok": true
+        }
+      ],
+      "heroBottom": 1103.625,
+      "benefitsTop": 1103.625,
+      "footerVersion": "v2.0.1",
+      "links": [
+        {
+          "text": "Skip to content",
+          "href": "#main"
+        },
+        {
+          "text": "Tabulous",
+          "href": "index.html"
+        },
+        {
+          "text": "Features",
+          "href": "index.html#features"
+        },
+        {
+          "text": "Pricing",
+          "href": "pricing.html"
+        },
+        {
+          "text": "Support",
+          "href": "support.html"
+        },
+        {
+          "text": "My account ↗",
+          "href": "account.html"
+        },
+        {
+          "text": "View on Chrome Web Store ↗",
+          "href": "https://chromewebstore.google.com/detail/tabulous/iljkidmanamoojdglpbpilnepdpcaiij"
+        },
+        {
+          "text": "Discover Tabulous",
+          "href": "#features"
+        },
+        {
+          "text": "Explore Pro plans →",
+          "href": "pricing.html"
+        },
+        {
+          "text": "View on Chrome Web Store ↗",
+          "href": "https://chromewebstore.google.com/detail/tabulous/iljkidmanamoojdglpbpilnepdpcaiij"
+        },
+        {
+          "text": "Tabulous",
+          "href": "index.html"
+        },
+        {
+          "text": "Pricing",
+          "href": "pricing.html"
+        },
+        {
+          "text": "Support",
+          "href": "support.html"
+        },
+        {
+          "text": "Privacy",
+          "href": "privacy.html"
+        },
+        {
+          "text": "Terms",
+          "href": "terms.html"
+        },
+        {
+          "text": "Delete account",
+          "href": "delete-account.html"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "headless": true,
+  "personalBrowserTouched": false
+}

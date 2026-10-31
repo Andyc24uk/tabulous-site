@@ -1,0 +1,11 @@
+{
+  "checkedDateKST": "2026-10-31",
+  "method": "Supabase read-only aggregate queries",
+  "project": "hgdolsgkvyxivlhwimsr",
+  "syncEnabled": true,
+  "paymentsEnabled": true,
+  "founderSlots": 100,
+  "founderSold": 0,
+  "founderAvailable": 100,
+  "settingsChanged": false
+}

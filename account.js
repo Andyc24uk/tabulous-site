@@ -50,9 +50,9 @@
     if (results[1].status === "fulfilled") billing = results[1].value;
     const paid = grant && ["pro", "lifetime", "trial"].includes(grant.entitlement) && (!grant.expiresAt || new Date(grant.expiresAt).getTime() > Date.now());
     const label = paid && grant.source === "owner-grant" ? "Complimentary Pro" : paid ? (grant.entitlement === "lifetime" ? (grant.founder ? "Founder's Lifetime" : "Lifetime Pro") : "Pro") : grant ? "Free" : "Could not verify access";
-    byId("plan-status").textContent = `Verified access: ${label}.${billing ? ` Billing plan: ${billing.currentPlan || "free"}.` : " Billing status is temporarily unavailable."}`;
-    byId("purchase-status").textContent = billing ? (billing.publicPurchasing === true ? "The server currently permits purchasing for this account." : "Public purchasing is closed. You can still view your account status.") : "Purchasing availability could not be verified. Checkout stays unavailable.";
-    byId("founder-status").textContent = billing && Number.isInteger(billing.founderRemaining) && billing.founderRemaining >= 0 && billing.founderRemaining <= 100 ? `Server-reported Founder availability: ${billing.founderRemaining} places currently unreserved. Availability is rechecked at checkout.` : "Founder availability could not be verified.";
+    byId("plan-status").textContent = `Current plan: ${label}${billing ? "" : ". Billing status is temporarily unavailable."}`;
+    byId("purchase-status").textContent = billing ? (billing.publicPurchasing === true ? "Choose a plan to continue to secure checkout." : "Purchasing is temporarily unavailable. You can still manage your account.") : "We could not load billing. Please refresh or try again later.";
+    byId("founder-status").textContent = billing && Number.isInteger(billing.founderRemaining) && billing.founderRemaining >= 0 && billing.founderRemaining <= 100 ? `Founder places available: ${billing.founderRemaining}. Your place is confirmed at checkout.` : "Founder availability could not be verified.";
     controls();
   }
   form.addEventListener("submit", async event => {
@@ -102,7 +102,7 @@
   }
   byId("start-checkout").addEventListener("click", () => redirectBilling("checkout", "https://checkout.stripe.com"));
   byId("billing-portal").addEventListener("click", () => redirectBilling("portal", "https://billing.stripe.com"));
-  byId("selected-plan").textContent = plan ? `Selected plan: ${{ monthly: "Pro Monthly — $1.99/month", annual: "Pro Annual — $14.99/year", lifetime: "Pro Lifetime — $29.99 one-time", founder: "Founder's Lifetime — $19.99 one-time" }[plan]} (USD).` : "Choose a plan on the pricing page if you want to check purchasing availability.";
+  byId("selected-plan").textContent = plan ? `Selected plan: ${{ monthly: "Pro Monthly — $1.99/month", annual: "Pro Annual — $14.99/year", lifetime: "Pro Lifetime — $29.99 one-time", founder: "Founder's Lifetime — $19.99 one-time" }[plan]} (USD).` : "Choose a Pro plan on the pricing page.";
   if (new URLSearchParams(location.search).has("checkout")) announce("Welcome back. Sign in to see your payment status and Pro access. You do not need the extension installed.");
   controls();
 })();
