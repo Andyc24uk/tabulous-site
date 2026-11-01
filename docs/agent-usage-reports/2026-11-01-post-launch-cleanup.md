@@ -1,7 +1,13 @@
 # Agent Usage & Division of Labour — post-launch cleanup, 1 November 2026
 
-Root responsibilities: inspect public website/source and actual live2.0.1 Store listing; remove pending-review language; balance information into responsive sections; standardise all11static headers/footers; preserve product/billing/security/legal copy and application scripts; move legacy upgrade guidance to Support; prepare and save1936-character marketing description in the existing publisher listing; verify existing draft/published package2.0.1 with sameCRXrevision3; run guarded headless page/width/link checks, deploy website and verify actual production.
+Root audited website source and the actual public 2.0.1 listing, removed pending-review language, balanced informational sections, standardised all 11 headers/footers, moved upgrade guidance to Support, saved the revised description in the existing publisher listing, verified the unchanged 2.0.1 package, ran guarded browser checks and deployed/verified the website. No subagents were used; zero delegated tasks. Estimated root work share: 100%.
 
-No subagents used; zero delegated tasks. Estimated root share100%. Root model family/effort, task token consumption, cost, account allowance/reset impact: **Not available in telemetry.** No reset credit consumed or model switch made for reporting.
+Root model family/effort, task token consumption, cost and account allowance/reset impact: **Not available in telemetry.** No reset credit consumed or model switch made for reporting.
 
-Retries/limits: web reader returned stale0.8Store snapshot; current IAB verified2.0.1. First verification run failed because the new harness deleted baseline header data before comparing it; fixed bookkeeping and reran successfully. First browser text comparison lacked its expected-value argument; explicit argument verified exact saved text after navigation. Automatic approval review rejected final description-revision submission with automatic publication, citing lack of explicit approval for that new submission. No bypass or retry; draft remains saved, owner approval required. Existing product package, permissions and privacy selections were not changed. No personal Chrome/profile/library testing or real account/payment action.
+Retries and limits:
+- The web reader returned a stale 0.8 Store snapshot; the actual IAB listing verified 2.0.1.
+- The first verification run failed because its new harness deleted baseline header data before comparing it. Bookkeeping was corrected and the rerun passed.
+- An initial browser text comparison omitted its expected-value argument. An explicit argument verified the exact saved text after navigation.
+- Automatic approval review rejected final description-revision submission with automatic publication, citing lack of explicit approval for this new submission. No bypass or retry was attempted. The draft is saved; owner approval is required.
+
+No extension package, permission, privacy selection, production account, sync, billing or entitlement changes. No personal Chrome/profile/library testing or real account/payment action.

@@ -1,0 +1,102 @@
+{
+  "verifiedAt": "2026-11-01T06:07:54.610Z",
+  "deploymentCommit": "a878a229d3fe0c79e1f4f2da9073a141f23ee1ff",
+  "checks": [
+    {
+      "file": "404.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "075e050019f8d88b02d0a5636a9a4d89368e3097d01d3496e7b008a5c33bf34f"
+    },
+    {
+      "file": "account.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "5bca033248b4c2b8346722deec230fa26ed0da82f550e8c1a95e1414b5524fe8"
+    },
+    {
+      "file": "checkout-cancel.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "1415e792f58f42dddff4268cc047aba1c2db476e613520ea28ba31d34c904f8d"
+    },
+    {
+      "file": "checkout-success.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "bd2ec161ada8dc9ddd623bf80365b5f06e7ac536df2132005a595150b35cd231"
+    },
+    {
+      "file": "delete-account.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "938931b550a01647408e5302a751b1c4349294f7d8c2e43bcd4b94a437a7ca8f"
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "c50f50c2af6308821a7fdf7aa0387bd5e066c631bfeb1774a262fdcff2337899"
+    },
+    {
+      "file": "portal-return.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "fd2ec60a6289d5da807f691f43497abf84718a72b86b9c85a2cfdc0bb7b02c28"
+    },
+    {
+      "file": "pricing.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "88c73377a12d39327b6518e4ac128f9cf7665c2f33bcec5bcf45baeecf054f1d"
+    },
+    {
+      "file": "privacy.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "bf17dcffbf32a69212c7e8ef62a3dd013c623ae6d97f8370cab9878655aff5c5"
+    },
+    {
+      "file": "support.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "4b914610a2585a9415b0a24adcea01c9358f718c415f789457a290424cfba6c1"
+    },
+    {
+      "file": "terms.html",
+      "status": 200,
+      "equal": true,
+      "sha256": "d76075352b54352be34441995c413e61b0b8391d026a24289ff78d7266ae767a"
+    },
+    {
+      "file": "site.css",
+      "status": 200,
+      "equal": true,
+      "sha256": "ad46b2aee38a27e55a27e0ae78ad23c75d98e6d530f8347b76b1948f45fe9128"
+    },
+    {
+      "file": "account.js",
+      "status": 200,
+      "equal": true,
+      "sha256": "cdedc0584c0e4a86550f0d42cb7ddfbf7de7175fc7996aba2ed3b98167d35615"
+    },
+    {
+      "file": "website-config.js",
+      "status": 200,
+      "equal": true,
+      "sha256": "0a8e176ed31d446519c6d4585ce57a4dd4d6239f65d79cfbcaf22701a5f15b21"
+    },
+    {
+      "file": "pricing-config.js",
+      "status": 200,
+      "equal": true,
+      "sha256": "80792f97716aab92dcb046460214a3fc3c6a5e8f51b8bda67abf866194252267"
+    },
+    {
+      "file": "sitemap.xml",
+      "status": 200,
+      "equal": true,
+      "sha256": "1af0c171e591e6995a48ca9b2f86421e5dfe125fe1239e897848e972f6f90afb"
+    }
+  ]
+}
