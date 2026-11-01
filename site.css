@@ -7,7 +7,6 @@ a{color:#5546e8;text-underline-offset:4px}
 header,main,footer{max-width:1240px;margin:auto;padding-left:36px;padding-right:36px}
 header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:28px;padding-bottom:var(--header-bottom-space)}
 .brand{display:inline-flex;align-items:center;gap:10px;font-size:25px;font-weight:780;letter-spacing:-1px;color:#0f172a;text-decoration:none}
-.version{font-size:11px;background:#eceafb;padding:3px 8px;color:#6553bd;letter-spacing:0;border-radius:7px}
 nav{display:flex;gap:28px;align-items:center}
 nav a{font-size:14px;color:#526079;text-decoration:none;font-weight:550}
 .nav-account{border:1px solid #dfe2ee;background:white;padding:8px 15px;border-radius:10px}
@@ -47,12 +46,14 @@ p{color:#526079;margin:0 0 20px}
 .closing{text-align:center;margin:70px 0 80px;padding:65px 30px;background:#eeecfb;border:1px solid #e1dcfa;border-radius:24px}
 .closing .fine{margin-top:20px}
 .closing h2{font-size:46px}
-footer{padding-top:40px;padding-bottom:35px;border-top:1px solid #e0e5ef}
+footer{padding-top:28px;padding-bottom:24px;border-top:1px solid #e0e5ef}
 footer .brand{font-size:22px}
 footer p,footer small{font-size:12px;margin:12px 0;color:#647089}
-footer div{display:flex;flex-wrap:wrap;gap:22px;margin:25px 0}
+footer div{display:flex;flex-wrap:wrap;gap:22px;margin:18px 0}
+footer>small{display:block;margin:0}
+.footer-version{font-size:11px;color:#647089;letter-spacing:0}
 footer a{font-size:12px;text-decoration:none;color:#526079}
-.page-head{padding:var(--page-start-space) 0 var(--page-content-gap);max-width:850px}
+.page-head{padding:var(--page-start-space) 0 var(--page-content-gap)}
 .page-head>:last-child{margin-bottom:0}
 .page-head+.prose{padding-top:0}
 .page-head h1{font-size:clamp(38px,4.5vw,58px)}
@@ -66,9 +67,11 @@ footer a{font-size:12px;text-decoration:none;color:#526079}
 .price{font-size:38px!important;font-weight:750;letter-spacing:-1px;color:#101936}
 .price small{display:block;font-size:12px;font-weight:450;letter-spacing:0;color:#647089}
 .recommended{border:2px solid #8f80fb;background:#fbfaff}
-.prose{max-width:780px;padding:35px 0 75px}
-.prose h2{font-size:25px;letter-spacing:-.7px;margin-top:32px;margin-bottom:16px}
-.prose>:first-child{margin-top:0}
+.prose{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 48px;padding:35px 0 75px}
+.info-section{min-width:0;border-top:1px solid #e0e5ef;padding-top:24px}
+.prose h2{font-size:25px;letter-spacing:-.7px;margin:0 0 16px}
+.info-section>:last-child{margin-bottom:0}
+.info-section p,.info-section ul,.info-section ol{max-width:70ch}
 .prose p,.prose li{font-size:15px;color:#526079}
 .account-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding-bottom:80px}
 .account-layout h2{font-size:25px;letter-spacing:-.8px}
@@ -116,6 +119,7 @@ nav a{font-size:12px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
 }
+@media(max-width:760px){.prose{grid-template-columns:1fr;gap:28px}}
 
 /* Homepage polish: page entry spacing shares the approved homepage values. */
 .homepage .hero{padding:var(--page-start-space) 0 42px}
@@ -132,11 +136,6 @@ nav a{font-size:12px}
 .homepage .split{margin-top:0;gap:48px}
 .homepage .closing{margin:40px 0 46px;padding:38px 30px}
 .homepage .closing h2{margin-bottom:18px}
-.homepage footer{padding-top:28px;padding-bottom:24px}
-.homepage footer>div:not(.footer-bottom){margin:18px 0}
-.homepage .footer-bottom{display:flex;justify-content:space-between;gap:12px;margin:0}
-.homepage .footer-bottom small{margin:0}
-.homepage .footer-version{margin-left:auto;font-size:11px;color:#647089;letter-spacing:0}
 @media(max-width:1100px) and (min-width:901px){
 .homepage .hero{gap:28px;grid-template-columns:1fr 1fr}
 .homepage .hero h1{font-size:46px}
@@ -153,13 +152,10 @@ nav a{font-size:12px}
 .homepage .split{grid-template-columns:1fr;gap:28px}
 .transition-tagline{font-size:15px;margin-top:24px}
 .homepage .closing{margin:28px 0 32px;padding:30px 20px}
-.homepage .footer-bottom{flex-direction:column;gap:8px}
-.homepage .footer-version{align-self:flex-end}
 }
 
 /* Public launch completion */
 .homepage .hero h1{font-size:clamp(36px,3.7vw,53px)}
-.release-availability{max-width:520px;margin-bottom:12px}
 .founder{border:2px solid #c59632;background:#fffaf0}
 .founder-crown{display:block;width:52px;height:42px;margin:0 0 14px}
 .founder .eyebrow{color:#856016}

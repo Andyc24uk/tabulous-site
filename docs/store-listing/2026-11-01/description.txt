@@ -1,0 +1,25 @@
+Keep your tabs. Clear your desktop.
+
+Too many open Chrome tabs? Too many windows cluttering your taskbar or Mac Dock? Tabulous keeps each project in a saved Workspace so you can close its window and reopen the tabs when you need them.
+
+Switch between work, research, learning and everyday browsing without leaving every project open at once. Find your saved tabs instead of hunting through windows or trying to remember where you left a useful page.
+
+• Save and close Workspace windows, then reopen their saved tabs when needed.
+• Organise projects into named, coloured Workspaces and Groups.
+• Manage saved tabs and keep different browsing contexts together.
+• Recover recent local browser sessions and export portable .tab backups.
+• Use the dashboard, toolbar popup or side panel.
+
+Free, local-first organisation
+Core Workspace, Group, backup and recovery features are free. No account is required. Your local library remains available offline.
+
+Optional Pro sync
+Automatically sync your saved Workspace library between computers and Chrome profiles. Connect each device to your account and choose to enable sync. Offline changes sync when you reconnect, with review when changes need your decision. Live browser windows and local recovery snapshots stay on their own device.
+
+All paid plans include the same Pro features: $1.99/month, $14.99/year or $29.99 once for Lifetime. Founder's Lifetime is $19.99 once for the first 100 eligible purchases and includes a permanent gold Founder crown. Prices are in USD; availability and any applicable tax are confirmed at checkout. If Pro ends, your local features remain available.
+
+Tabulous uses tab URLs and titles to save and reopen your work. Optional cloud sync sends your saved library to your account.
+
+Plans and account: https://tabulous.tools/pricing.html
+Privacy: https://tabulous.tools/privacy.html
+Support, upgrade help and account deletion: https://tabulous.tools/support.html
