@@ -1,0 +1,61 @@
+{
+  "verifiedAt": "2026-11-01T06:18:20.629Z",
+  "deploymentCommit": "3200e4b7a5071c47bd749d1c2c39b3f0acc79966",
+  "checks": [
+    {
+      "file": "404.html",
+      "sourceEquality": true,
+      "footerTagline": true
+    },
+    {
+      "file": "account.html",
+      "sourceEquality": true,
+      "footerTagline": true
+    },
+    {
+      "file": "checkout-cancel.html",
+      "sourceEquality": true,
+      "footerTagline": true
+    },
+    {
+      "file": "checkout-success.html",
+      "sourceEquality": true,
+      "footerTagline": true
+    },
+    {
+      "file": "delete-account.html",
+      "sourceEquality": true,
+      "footerTagline": true
+    },
+    {
+      "file": "index.html",
+      "sourceEquality": true,
+      "footerTagline": true
+    },
+    {
+      "file": "portal-return.html",
+      "sourceEquality": true,
+      "footerTagline": true
+    },
+    {
+      "file": "pricing.html",
+      "sourceEquality": true,
+      "footerTagline": true
+    },
+    {
+      "file": "privacy.html",
+      "sourceEquality": true,
+      "footerTagline": true
+    },
+    {
+      "file": "support.html",
+      "sourceEquality": true,
+      "footerTagline": true
+    },
+    {
+      "file": "terms.html",
+      "sourceEquality": true,
+      "footerTagline": true
+    }
+  ]
+}
