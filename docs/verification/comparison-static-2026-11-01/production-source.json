@@ -1,0 +1,26 @@
+{
+  "deployedSourceCommit": "27d350bda7399abe184e57357e12fed3d995092d",
+  "url": "https://tabulous.tools/",
+  "verified": [
+    {
+      "file": "index.html",
+      "sha256": "5d0f0b787400ce0c97d526dc5c3afc2d534d991f9fc8d6e286467643d99a6c8e",
+      "productionMatches": true
+    },
+    {
+      "file": "site.css",
+      "sha256": "0e3b26485cc84ffb6e409fc8226f45e0868371dd5839b9ef3682bbdedcc78b30",
+      "productionMatches": true
+    },
+    {
+      "file": "assets/originals/tabulous_from_chaos_to_clarity.png",
+      "sha256": "a674acae4bc0d905ddb6014da94f1f4300fd7c0b67071a703d51d2506b24ec23",
+      "productionMatches": true
+    },
+    {
+      "file": "assets/tabulous-from-chaos-to-clarity.webp",
+      "sha256": "a168c0014b9c3b30ff6ce9209783245409f58f823d76f1faa6358f9185c7a3bb",
+      "productionMatches": true
+    }
+  ]
+}

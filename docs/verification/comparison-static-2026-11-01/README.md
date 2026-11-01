@@ -6,7 +6,7 @@ Local guarded disposable headless Chrome passed at 1440, 1366, 1024, 820, 390 an
 
 The focused browser check reused the existing promotional verification harness with temporary assertions/output routing; no permanent test framework or unrelated production files added. Before/local JSON and screenshots preserve measurements.
 
-Production verification follows the explicitly authorised website-only GitHub Pages deployment. No extension, Store listing, sync, billing or account configuration changes.
+Production deployment verified at https://tabulous.tools/ from source commit 27d350bda7399abe184e57357e12fed3d995092d. The same six live browser widths and 10 links passed; clicks leave the page and tab count unchanged. Live HTML, CSS, original PNG and WebP match source byte-for-byte. Live screenshots and JSON preserve evidence. No extension, Store listing, sync, billing or account configuration changes.
 
 ## Agent Usage & Division of Labour
 
