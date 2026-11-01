@@ -1,0 +1,7 @@
+# Agent Usage & Division of Labour — promotional comparison
+
+Root inspected the owner-approved original, official Google screenshot specifications, existing synthetic UI assets and pending publisher revision. Root prepared a byte-identical website original, lossless WebP, a proportionally scaled full-bleed Store comparison, and the five-image selection. Root adjusted only homepage presentation, captured guarded browser baseline/after views, checked desktop enlargement and responsive positioning, deployed the website and verified live evidence. No subagents used; zero delegated tasks. Estimated root share: 100%.
+
+Model family/effort, task tokens, cost, account allowance/reset impact: **Not available in telemetry.** No reset credit consumed or model change made for reporting.
+
+Limits/retries: initial combined source/optional Adobe workflow reads were verbose/truncated; focused reads followed. The Adobe social-resizing workflow was not applied: exact rendering and lossless encoding preserved the approved image without generative UI changes. Google required owner reauthentication, which the owner completed. Screenshot editing and Save draft are disabled during the existing description review; no cancellation or workaround attempted. A compact-desktop hero-height check failed initially; compact button/pill spacing was corrected and six widths passed on rerun. Additional captures checked the comparison and preserved Workspace section. No extension, account, library, sync, billing, entitlement or publisher content changes.

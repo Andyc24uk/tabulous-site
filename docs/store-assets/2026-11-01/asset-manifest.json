@@ -1,0 +1,64 @@
+{
+  "websiteOriginal": "assets/originals/tabulous_from_chaos_to_clarity.png",
+  "websiteOriginalDimensions": [
+    1672,
+    941
+  ],
+  "websiteOptimised": "assets/tabulous-from-chaos-to-clarity.webp",
+  "websiteOptimisedDimensions": [
+    1672,
+    941
+  ],
+  "sourceSha256": "a674acae4bc0d905ddb6014da94f1f4300fd7c0b67071a703d51d2506b24ec23",
+  "sourceBytes": 1566320,
+  "webpBytes": 1078064,
+  "webpMode": "lossless",
+  "storeScreenshots": [
+    {
+      "order": 1,
+      "path": "/Users/noname/Desktop/Projects/Tabulous/tabulous-site/docs/store-assets/2026-11-01/01-dashboard-1280x800.png",
+      "width": 1280,
+      "height": 800,
+      "format": "PNG RGB 24-bit; no alpha",
+      "sha256": "5454a84e5058ca6ac93cab593030b3bd2c0278e14930a2f31417b01cb2ee235e"
+    },
+    {
+      "order": 2,
+      "path": "/Users/noname/Desktop/Projects/Tabulous/tabulous-site/docs/store-assets/2026-11-01/02-chaos-to-clarity-1280x800.png",
+      "width": 1280,
+      "height": 800,
+      "format": "PNG RGB 24-bit; no alpha",
+      "sha256": "ba96754dc0be04ea42ca89dec07ae4daeb44ea46fc76ef21d807455a6771deab"
+    },
+    {
+      "order": 3,
+      "path": "/Users/noname/Desktop/Projects/Tabulous/tabulous-site/docs/store-assets/2026-11-01/03-workspace-1280x800.png",
+      "width": 1280,
+      "height": 800,
+      "format": "PNG RGB 24-bit; no alpha",
+      "sha256": "412807b7dd61cdfa848af26d9dc43c4667cd5238785b8ce63ef0b8fe9dbf2361"
+    },
+    {
+      "order": 4,
+      "path": "/Users/noname/Desktop/Projects/Tabulous/tabulous-site/docs/store-assets/2026-11-01/04-groups-dark-1280x800.png",
+      "width": 1280,
+      "height": 800,
+      "format": "PNG RGB 24-bit; no alpha",
+      "sha256": "72a4a1c6283344e670ddb063e5b96a921afc60fb2d3131bdc7a930857a786395"
+    },
+    {
+      "order": 5,
+      "path": "/Users/noname/Desktop/Projects/Tabulous/tabulous-site/docs/store-assets/2026-11-01/05-pro-plans-1280x800.png",
+      "width": 1280,
+      "height": 800,
+      "format": "PNG RGB 24-bit; no alpha",
+      "sha256": "c5c4359362b08f3be1a8ab6cdc2533341e2a7c0db9462ff8b66a23029298a050"
+    }
+  ],
+  "comparisonAdaptation": "Complete source scaled proportionally to 1280px wide; only outer background extended vertically to produce 1280x800. No cropped headline, UI edits or simulated sync states.",
+  "publisherStatus": "Existing description revision Pending review; screenshot controls and Save draft disabled",
+  "pendingDescriptionVerifiedUnchanged": true,
+  "screenshotsSavedInPublisher": false,
+  "screenshotsSubmitted": false,
+  "reviewCancelled": false
+}
