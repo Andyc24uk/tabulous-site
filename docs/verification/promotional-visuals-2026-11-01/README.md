@@ -6,7 +6,7 @@ The comparison immediately follows the hero. The existing Workspace list-view im
 
 Desktop hero grid allocates more width to the screenshot rather than scaling the section. Measured image width grows 17.4% at 1440/1366px and 19.1% at 1024px. Hero height grows only 38/46/64px respectively; tablet and mobile hero/image dimensions are unchanged. The headline remains large and readable, with a modest desktop size adjustment to fit the narrower text column. The 1440px source screenshot remains sufficient for the enlarged display.
 
-Guarded real headless Chrome: baseline and after checks at 1440,1366,1024,820,390,320px. Image enlargement, height, aspect ratio, no horizontal overflow, comparison directly after hero, no duplicate comparison heading, retained detailed section, loaded images and 11 links passed locally. Desktop/mobile hero, comparison and Workspace-detail screenshots were inspected. Live results and source equality are added after deployment.
+Guarded real headless Chrome: baseline and after checks at 1440, 1366, 1024, 820, 390 and 320px. Image enlargement, height, aspect ratio, no horizontal overflow, comparison directly after hero, no duplicate comparison heading, retained detailed section, loaded images and 11 links passed locally. Desktop/mobile hero, comparison and Workspace-detail screenshots were inspected. All six live browser widths and 11 links also passed. The live homepage, CSS, original PNG and WebP match source byte-for-byte. Deployed source commit: 63325d99d2b39107a7aa4485785161a133bd239c.
 
 The Store image set and pending-review limitation are documented in ../../store-assets/2026-11-01/README.md. No extension or backend functionality changed.
 

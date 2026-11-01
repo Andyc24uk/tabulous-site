@@ -1,0 +1,34 @@
+{
+  "verifiedAt": "2026-11-01T07:23:10.148Z",
+  "deploymentCommit": "63325d99d2b39107a7aa4485785161a133bd239c",
+  "checks": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "equal": true,
+      "bytes": 7503,
+      "sha256": "127ca6905e449fa692080a90572c9fc0f164c4ecc4232cea9eb3a0942fceb257"
+    },
+    {
+      "file": "site.css",
+      "status": 200,
+      "equal": true,
+      "bytes": 10031,
+      "sha256": "06fcdb320d436690a8dc6be1cbc4a4317f6bcc45c3674315b09454350c628b14"
+    },
+    {
+      "file": "assets/originals/tabulous_from_chaos_to_clarity.png",
+      "status": 200,
+      "equal": true,
+      "bytes": 1566320,
+      "sha256": "a674acae4bc0d905ddb6014da94f1f4300fd7c0b67071a703d51d2506b24ec23"
+    },
+    {
+      "file": "assets/tabulous-from-chaos-to-clarity.webp",
+      "status": 200,
+      "equal": true,
+      "bytes": 1078064,
+      "sha256": "a168c0014b9c3b30ff6ce9209783245409f58f823d76f1faa6358f9185c7a3bb"
+    }
+  ]
+}
