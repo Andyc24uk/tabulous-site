@@ -128,9 +128,8 @@ nav a{font-size:12px}
 .homepage .pills{margin-top:20px;gap:8px 16px;font-size:12px}
 .homepage .hero-art{padding-bottom:12px}
 .comparison-visual{margin:0 0 20px}
-.comparison-visual a{display:block;border-radius:18px;overflow:hidden;border:1px solid #e3deff;background:#f6f3ff}
+.comparison-visual picture{display:block;border-radius:18px;overflow:hidden;border:1px solid #e3deff;background:#f6f3ff}
 .comparison-visual img{display:block;width:100%;height:auto}
-.comparison-visual figcaption{margin-top:8px;text-align:center;font-size:12px;color:#647089}
 .homepage .section{padding:36px 0}
 .homepage .intro{max-width:640px}
 .homepage .intro p:last-child{max-width:530px}
