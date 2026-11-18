@@ -95,13 +95,13 @@
       const payload = action === "checkout" ? { action, plan, requestId: checkoutRequest } : { action };
       const result = await functions(config.billingFunction, payload, token);
       if (active !== generation || session?.access_token !== token) return;
-      const url = new URL(result.url); if (url.origin !== allowedOrigin || url.username || url.password) throw new Error("The billing service returned an invalid destination.");
+      const url = new URL(result.url); if (!(Array.isArray(allowedOrigin) ? allowedOrigin : [allowedOrigin]).includes(url.origin) || url.username || url.password) throw new Error("The billing service returned an invalid destination.");
       location.assign(url.href);
     } catch (e) { if (active === generation) announce(e.message); }
     finally { busy = false; controls(); }
   }
   byId("start-checkout").addEventListener("click", () => redirectBilling("checkout", "https://checkout.stripe.com"));
-  byId("billing-portal").addEventListener("click", () => redirectBilling("portal", "https://billing.stripe.com"));
+  byId("billing-portal").addEventListener("click", () => redirectBilling("portal", ["https://billing.stripe.com", "https://app.link.com", "https://link.com"]));
   byId("selected-plan").textContent = plan ? `Selected plan: ${{ monthly: "Pro Monthly — $1.99/month", annual: "Pro Annual — $14.99/year", lifetime: "Pro Lifetime — $29.99 one-time", founder: "Founder's Lifetime — $19.99 one-time" }[plan]} (USD).` : "Choose a Pro plan on the pricing page.";
   if (new URLSearchParams(location.search).has("checkout")) announce("Welcome back. Sign in to see your payment status and Pro access. You do not need the extension installed.");
   controls();
